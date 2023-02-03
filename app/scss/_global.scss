@@ -1,0 +1,54 @@
+html,
+body {
+  height: 100%;
+}
+
+// Body & locked
+
+body {
+  font-family: $fontMain;
+
+  &.locked {
+    overflow: hidden;
+  }
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+.main {
+  flex: 1 0 auto;
+}
+.footer {
+  flex: 0 0 auto;
+}
+
+// Container
+
+.container {
+  max-width: ($containerWidth + $containerPadding) + px;
+  margin: 0 auto;
+  padding: 0 $containerSidePadding + px;
+
+  @media (max-width: $breakpoint1400) {
+    max-width: 1200px;
+  }
+  @media (max-width: $breakpoint1200) {
+    max-width: 1200px;
+  }
+  @media (max-width: $breakpoint992) {
+    max-width: 970px;
+  }
+  @media (max-width: $breakpoint768) {
+    max-width: 740px;
+  }
+  @media (max-width: $breakpoint576) {
+    max-width: 530px;
+  }
+  @media (max-width: $breakpoint480) {
+    max-width: none;
+  }
+}

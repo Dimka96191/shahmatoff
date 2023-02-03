@@ -1,0 +1,15 @@
+// Global SCSS-files import
+@import "_fonts";
+@import "_vars";
+@import "_reset";
+@import "_global";
+
+// Sections or Page SCSS-files import
+@import "header";
+@import "footer";
+
+
+// @import "footer.scss";
+
+//libs
+@import "_libs";
