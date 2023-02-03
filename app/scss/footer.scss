@@ -88,6 +88,8 @@
         // margin-top: 20px;
     }
     &__list-item {
+        font-size: 14px;
+        font-weight: 500;
         &:not(:last-child) {
             margin-bottom: 10px;
         }
@@ -130,8 +132,8 @@
         display: flex;
         align-items: center;
         justify-content: center;
-    
-        svg{
+
+        svg {
             max-width: 20px;
         }
 

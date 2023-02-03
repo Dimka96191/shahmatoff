@@ -36,6 +36,7 @@
 
         &:hover {
             background: rgb(212, 159, 12);
+            transition: 0.2s all;
         }
     }
     &__item-link {
@@ -100,6 +101,7 @@
 
         &__items {
             display: none;
+
             bottom: 0px;
             left: 0px;
             transform: translateY(100%);
@@ -108,6 +110,7 @@
             width: 200px;
             padding: 25px 15px;
             border-radius: 0 0 10px 10px;
+            transition: 2s ease all;
         }
         &__item {
             padding: 5px 3px;
@@ -122,6 +125,7 @@
             &:hover {
                 color: rgb(255, 186, 0);
                 text-decoration: underline;
+                transition: 0.2s all;
             }
         }
     }
