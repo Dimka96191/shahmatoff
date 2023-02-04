@@ -19,6 +19,7 @@
     "gulp-uglify-es": "^2.0.0"
   },
   "dependencies": {
+    "puppeteer": "^19.6.3",
     "sass": "^1.50.1"
   }
 }
