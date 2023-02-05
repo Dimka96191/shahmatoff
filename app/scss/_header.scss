@@ -16,14 +16,17 @@
     align-items: center;
     padding: 20px 0;
 }
+
 .logo {
     z-index: 3;
+
     &__link {
         color: rgb(255, 186, 0);
         font-family: "Roboto", sans-serif;
         font-size: 24px;
     }
 }
+
 .menu {
     display: flex;
     // gap: 10px;
@@ -38,7 +41,10 @@
             background: rgb(212, 159, 12);
             transition: 0.2s all;
         }
+
     }
+
+    
     &__item-link {
         color: #fff;
         font-size: 16px;
@@ -47,6 +53,7 @@
         display: flex;
         position: relative;
         transition: 0.5s color;
+
         &:after {
             position: absolute;
             content: "";
@@ -58,19 +65,23 @@
             transform: scale(0);
             transition: 0.5s transform;
         }
+
         &hover {
             color: #131418;
+
             &::after {
                 transform: scale(1);
             }
         }
     }
+
     .dropdown-list {
         position: relative;
 
         @media (min-width: $breakpoint992) {
             padding-right: 35px;
             border-radius: 0 5px 0 0;
+
             &::after {
                 position: absolute;
                 content: "";
@@ -81,6 +92,7 @@
                 background: #fff;
                 transform: rotate(-45deg);
             }
+
             &::before {
                 position: absolute;
                 content: "";
@@ -112,6 +124,7 @@
             border-radius: 0 0 10px 10px;
             transition: 2s ease all;
         }
+
         &__item {
             padding: 5px 3px;
 
@@ -119,6 +132,7 @@
                 margin-bottom: 5px;
             }
         }
+
         &__link {
             color: #fff;
 
@@ -160,6 +174,7 @@
     display: none;
     background: transparent;
     z-index: 3;
+
     @media screen and (max-width: $burgerBreakpoint) {
         display: flex;
         position: relative;
@@ -195,6 +210,7 @@
             background: $burgerColor;
             transition: cubic-bezier(0.785, 0.135, 0.15, 0.86) 0.3s all;
         }
+
         &::before {
             top: 0;
         }

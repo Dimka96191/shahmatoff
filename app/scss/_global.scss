@@ -23,6 +23,7 @@ body {
 .main {
   flex: 1 0 auto;
 }
+
 .footer {
   flex: 0 0 auto;
 }
@@ -37,19 +38,48 @@ body {
   @media (max-width: $breakpoint1400) {
     max-width: 1200px;
   }
+
   @media (max-width: $breakpoint1200) {
     max-width: 1200px;
   }
+
   @media (max-width: $breakpoint992) {
     max-width: 970px;
   }
+
   @media (max-width: $breakpoint768) {
     max-width: 740px;
   }
+
   @media (max-width: $breakpoint576) {
     max-width: 530px;
   }
+
   @media (max-width: $breakpoint480) {
     max-width: none;
+  }
+}
+
+
+// buttons
+
+.btn {
+  padding: 14px 30px;
+  border: transparent;
+  display: block;
+
+  margin-left: auto;
+  font-weight: 800;
+  line-height: 1.1;
+  background-color: rgb(212, 159, 12);
+  color: #fff;
+  text-align: center;
+  border-radius: 0 5px 0 5px;
+
+  text-decoration: none;
+
+  &:hover {
+    background-color: darken(rgb(212, 159, 12), 8%);
+    transition: 0.3s;
   }
 }
