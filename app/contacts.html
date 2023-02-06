@@ -6,6 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Контакты</title>
   <link rel="stylesheet" href="css/style.min.css" />
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU" type="text/javascript">
+  </script>
 </head>
 
 <body>
@@ -19,8 +21,8 @@
             </div>
             <nav>
               <ul class="menu">
-                <li class="menu__item">
-                  <a href="index.html" class="menu__item-link" date-scroll>Главная</a>
+                <li class="menu__item menu__item--active">
+                  <a href="./index.html" class="menu__item-link" date-scroll>Главная</a>
                 </li>
                 <li class="menu__item dropdown-list">
                   <a href="#" class="menu__item-link" date-scroll>О школе</a>
@@ -47,10 +49,10 @@
                   <a href="#" class="menu__item-link" date-scroll>Тренеры</a>
                 </li>
                 <li class="menu__item">
-                  <a href="#" class="menu__item-link" date-scroll>Мысли тренера</a>
+                  <a href="./blog.html" class="menu__item-link" date-scroll>Наш Блог</a>
                 </li>
                 <li class="menu__item">
-                  <a href="./blog.html" class="menu__item-link" date-scroll>Наш Блог</a>
+                  <a href="#" class="menu__item-link" date-scroll>Стоимость</a>
                 </li>
                 <li class="menu__item">
                   <a href="./contacts.html" class="menu__item-link" date-scroll>Контакты</a>
@@ -63,6 +65,7 @@
           </div>
         </div>
       </div>
+    </header>
     </header>
     <main class="main">
 
@@ -78,6 +81,36 @@
           </ul>
         </div>
       </div>
+
+      <section class="section-contacts">
+        <div class="container">
+          <div class="section-contacts__content">
+            <h1 class="section-title section-contacts__title">
+              Наши контакты
+            </h1>
+            <div class="section-contacts__content-item">
+              <p class="section-contacts__content-text">
+                г.Екатеринбург
+              </p>
+              <p class="section-contacts__content-text">
+                ул. Авиационная, 10 (Южный Автовокзал)
+              </p>
+              <p class="section-contacts__content-text">
+                ул. Хохрякова, 48 (КД "Тихвинъ")
+              </p>
+            </div>
+
+            <a class="section-contacts__content-tell" href="tel:+73432712011">
+              +7 (343) 271-20-11
+            </a>
+          </div>
+
+          <div class="section-contacts__bottom">
+            <div class="section-contacts__map map" id="map"> </div>
+          </div>
+
+        </div>
+      </section>
 
 
     </main>
