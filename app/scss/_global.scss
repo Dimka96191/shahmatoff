@@ -8,6 +8,7 @@ body {
 body {
   font-family: $fontMain;
   font-weight: 400;
+  background: #000;
 
   &.locked {
     overflow: hidden;
@@ -60,7 +61,6 @@ body {
   }
 }
 
-
 // buttons
 
 .btn {
@@ -82,4 +82,44 @@ body {
     background-color: darken(rgb(212, 159, 12), 8%);
     transition: 0.3s;
   }
+}
+
+// bread-crumb
+
+.bread-crumb {
+  margin-top: 25px;
+  &__list {
+    display: flex;
+    background: #414447;
+    color: #fff;
+    font-size: 15px;
+    padding: 10px 15px;
+    font-weight: 400;
+    border-radius: 5px;
+  }
+  &__list-item {
+  }
+
+  &__list-item:not(:last-child) {
+    margin-right: 20px;
+    position: relative;
+    // color: ;
+
+    &::after {
+      content: "/";
+      position: absolute;
+      right: -10px;
+      transform: translateX(50%);
+    }
+  }
+  &__list-item--active {
+    color: #fff;
+    text-decoration: none;
+  }
+
+  a {
+    color: inherit;
+  }
+}
+.container {
 }
