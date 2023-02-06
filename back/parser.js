@@ -1,32 +1,34 @@
-window.addEventListener("DOMContentLoaded", () => {
-  const body = document.querySelector("body");
+const puppeteer = require("puppeteer");
 
-  let textNodes = [];
+const sleep = (ms) =>
+  new Promise((res) => {
+    setTimeout(res, ms);
+  });
+(async () => {
+  const browser = await puppeteer.launch();
+  const page = await browser.newPage();
+  await page.goto("https://vk.com/chessekb");
 
-  // recurcy функция которая проходится по всем элементам страницы, и по всем вложенностям, до тех пор пока не найдет конечный элемент
+  await page.evaluate(() => {
+    window.scrollBy(0, window.innerHeight);
+  });
 
-  function recurcy(element) {
-    element.childNodes.forEach((node) => {
-      if (node.nodeName.match(/^H\d/)) {
-        const obj = {
-          header: node.nodeName,
-          content: node.textContent,
-        };
-        textNodes.push(obj);
-      } else {
-        recurcy(node);
-      }
-    });
-  }
-  recurcy(body);
+  page.on("console", (msg) => {
+    console.log("PAGE LOG: ", msg.text());
+  });
 
-  fetch("https://jsonplaceholder.typicode.com/posts", {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json",
-    },
-    body: JSON.stringify(textNodes),
-  })
-    .then((response) => response.json())
-    .then((json) => console.log(json));
-});
+  const result = await page.$$eval(".post", (elements) => {
+    const data = [];
+    for (const el of elements) {
+      const textEl = el.querySelector(".wall_post_text");
+      data.push({
+        text: el.querySelector(".wall_post_text").innerHTML,
+        data: el.querySelector(".wall_post_text").innerText,
+      });
+    }
+    return data;
+  });
+  console.log(result.length);
+  await page.screenshot({ path: "example.png" });
+  await browser.close();
+})();
