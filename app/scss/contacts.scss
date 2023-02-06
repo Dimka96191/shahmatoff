@@ -1,0 +1,48 @@
+.section-contacts {
+    padding: 50px 0;
+    &__content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        color: #202328;
+    }
+    &__title {
+    }
+    &__content-item {
+        margin-top: 15px;
+    }
+    &__content-text {
+        margin: 5px 0;
+        font-size: 18px;
+        line-height: 1.2;
+    }
+    &__content-tell {
+        margin-top: 15px;
+        font-weight: 700;
+        font-family: "Roboto", sans-serif;
+        font-size: 28px;
+        line-height: calc(46 / 28);
+        font-weight: 300;
+        color: inherit;
+
+        &:hover {
+            // color: lighten(#d7e0f0, 0.5);
+            text-decoration: underline;
+            transition: 0.3s all ease;
+        }
+    }
+    &__bottom {
+        margin-top: 50px;
+        
+    }
+    &__map {
+        margin: 0 auto;
+    }
+}
+
+.map {
+    height: 450px;
+    // max-width: 800px;
+}

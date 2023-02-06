@@ -8,7 +8,7 @@ body {
 body {
   font-family: $fontMain;
   font-weight: 400;
-  background: #000;
+  // background: #000;
 
   &.locked {
     overflow: hidden;
@@ -120,6 +120,16 @@ body {
   a {
     color: inherit;
   }
+
+  a:hover {
+    color: rgb(255, 186, 0);
+    transition: 0.3s all ease;
+    // text-decoration: underline;
+  }
 }
-.container {
+
+.section-title {
+  font-size: 32px;
+  line-height: 1.2;
+  font-weight: 600;
 }
