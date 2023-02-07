@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "data": "node back/data.js",
     "start": "node back/parser.js",
+    "posts": "node back/getPosts.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Dimka and Jen'ka",
