@@ -1,4 +1,3 @@
-// const config = require("./config");
 const puppeteer = require("puppeteer");
 
 const sleep = (ms) =>
@@ -6,7 +5,9 @@ const sleep = (ms) =>
     setTimeout(res, ms);
   });
 
-(async () => {
+// let data = await getPost();
+
+let data = (async function getPost() {
   const browser = await puppeteer.launch();
   const page = await browser.newPage();
   // await page.goto("https://vk.com");
@@ -70,13 +71,7 @@ const sleep = (ms) =>
   console.log(result);
   // await page.screenshot({ path: "example.png" });
   await browser.close();
+  //   return data;
 })();
 
-// if (result.length != 0) {
-//   let i = 0;
-//   while (i < result.length) {
-//     console.log(result[i]);
-//     i++;
-//   }
-// }
-// console.log(config.login);
+console.log(data);
