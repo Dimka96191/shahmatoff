@@ -75,7 +75,7 @@ const sleep = (ms) =>
     }
     return data;
   });
-  console.log(result.length);
+  console.log(result);
   // await page.screenshot({ path: "example.png" });
   await browser.close();
 })();
