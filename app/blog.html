@@ -50,7 +50,11 @@
                     >
                   </li>
                   <li class="menu__item">
-                    <a href="./blog.html" class="menu__item-link" date-scroll
+                    <a
+                      href="./blog.html"
+                      id="getData"
+                      class="menu__item-link"
+                      date-scroll
                       >Наш Блог</a
                     >
                   </li>
@@ -80,11 +84,7 @@
       <main class="main">
         <section class="page-projects">
           <div class="container">
-            <h2 class="page-title projects-title">Блог компании</h2>
-            <div class="page-subtitle projects-subtitle">
-              Список новостей компании Woodtech и статей на тему архитектурного
-              дизайна, проектирования и дизайна интерьеров.
-            </div>
+            <div class="wrapper_posts"></div>
           </div>
         </section>
       </main>
@@ -251,6 +251,6 @@
     </div>
 
     <script src="../js/main.min.js"></script>
-    <script src="../back/data.js"></script>
+    <script src="./js/data.js"></script>
   </body>
 </html>

@@ -5,6 +5,7 @@ const sleep = (ms) =>
     setTimeout(res, ms);
   });
 
+let posts = new Set();
 // let data = await getPost();
 
 let data = (async function getPost() {
@@ -61,7 +62,7 @@ let data = (async function getPost() {
         ) {
           data.push({
             text: el.querySelector(".wall_post_text").innerHTML,
-            data: el.querySelector(".wall_post_text").innerText,
+            // data: el.querySelector(".wall_post_text").innerText,
           });
         }
       }
@@ -74,4 +75,6 @@ let data = (async function getPost() {
   //   return data;
 })();
 
-console.log(data);
+posts.add(data);
+console.log(posts);
+module.exports = posts;
