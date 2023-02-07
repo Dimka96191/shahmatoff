@@ -1,63 +1,68 @@
 //start paralax
+
+.sub-head {
+  // background-color: #5f5c5f;
+  // padding-top: 74px;
+}
 .layers {
-    height: 442px;
-    // height: 100vh;
-    display: flex;
-    background-color: #fff;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    overflow: hidden;
-    position: relative;
-    .layer {
-      height: 100%;
-      width: 100%;
-      position: absolute;
-      background-size: cover;
-      background-position: center;
-      will-change: transform;
-    }
-  }
-
-  .layers__base {
-    transform: translate3d(0, calc(var(--scrollTop) / 1.25), 0);
-  }
-  .layers__middle {
-    transform: translate3d(0, calc(var(--scrollTop) / 2), 0);
-    z-index: 1;
-  }
-  .layers__front-top {
-    transform: translate3d(0, calc(var(--scrollTop) / 4), 0);
-    z-index: 2;
-  }
-  .layers__front-bottom {
-    transform: translate3d(0, calc(var(--scrollTop) / 12), 0);
-    z-index: 4;
-  }
-  .layer__text {
-    z-index: 3;
+  height: 442px;
+  // height: 100vh;
+  display: flex;
+  background-color: #fff;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+  .layer {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-size: cover;
+    background-position: center;
     will-change: transform;
-    transform: translate3d(0, calc(var(--scrollTop) / 2), 0);
-    text-shadow: 0 0 2px #440cc9;
-    h1 {
-      font-family: "breeze";
-      // font-size: calc(var(--index) * 5);
-      font-size: 72px;
-      letter-spacing: 4px;
-      padding-top: 50px;
-      line-height: 0.8;
-      color: #231324;
-    }
-    p {
-      font-family: Marck;
-      // font-size: calc(var(--index) * 4);
-      font-size: 32px;
-      font-style: bold;
-      font-weight: 600;
-      letter-spacing: 2px;
-      color: #21373e;
-      text-shadow: 0 0 5px #631a57;
-    }
   }
+}
 
-  // finish paralax
+.layers__base {
+  transform: translate3d(0, calc(var(--scrollTop) / 1.25), 0);
+}
+.layers__middle {
+  transform: translate3d(0, calc(var(--scrollTop) / 2), 0);
+  z-index: 1;
+}
+.layers__front-top {
+  transform: translate3d(0, calc(var(--scrollTop) / 4), 0);
+  z-index: 2;
+}
+.layers__front-bottom {
+  transform: translate3d(0, calc(var(--scrollTop) / 12), 0);
+  z-index: 4;
+}
+.layer__text {
+  z-index: 3;
+  will-change: transform;
+  transform: translate3d(0, calc(var(--scrollTop) / 2), 0);
+  text-shadow: 0 0 2px #440cc9;
+  h1 {
+    font-family: "breeze";
+    // font-size: calc(var(--index) * 5);
+    font-size: 72px;
+    letter-spacing: 4px;
+    // padding-top: -20px;
+    line-height: 0.8;
+    color: #231324;
+  }
+  p {
+    font-family: Marck;
+    // font-size: calc(var(--index) * 4);
+    font-size: 32px;
+    font-style: bold;
+    font-weight: 600;
+    letter-spacing: 2px;
+    color: #21373e;
+    text-shadow: 0 0 2px #631a57;
+  }
+}
+
+// finish paralax
