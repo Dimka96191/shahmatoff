@@ -25,41 +25,10 @@ function burgerMenu() {
 }
 burgerMenu();
 
-// Яндекс карта
+// import "../css/style.min.css";
 
-// ymaps.ready(init);
-// function init() {
-//   var myMap = new ymaps.Map(
-//       "map",
-//       {
-//         center: [56.82, 60.6],
-//         zoom: 13,
-//         controls: ["smallMapDefaultSet"],
-//       },
-//       {
-//         restrictMapArea: [
-//           [56.699, 60.312],
-//           [56.989, 60.88],
-//         ],
-//       }
-//     ),
-//     myGeoObject = new ymaps.GeoObject();
-
-//   myMap.geoObjects.add(
-//     new ymaps.Placemark([56.830668, 60.592948], {
-//       balloonContent: "Хохрякова, 48",
-//     })
-//   );
-
-//   myMap.geoObjects.add(
-//     new ymaps.Placemark([56.802107, 60.602072], {
-//       balloonContent: "Авиационная улица, 10",
-//     })
-//   );
-// }
-
-const page_blog = document.querySelector("#getData");
-page_blog.addEventListener("click", () => {
-  preventDefault();
-  console.log("Вы открыли контакты!");
+// parallax
+window.addEventListener("scroll", () => {
+  document.body.style.cssText = `--scrollTop: ${window.scrollY}px`;
 });
+
