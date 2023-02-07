@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Контакты</title>
+  <title>Тренеры</title>
   <link rel="stylesheet" href="css/style.min.css" />
   <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU" type="text/javascript">
   </script>
@@ -73,45 +73,123 @@
         <div class="container">
           <ul class="bread-crumb__list">
             <li class="bread-crumb__list-item">
-              <a href="#">Главная</a>
+              <a href="./index.html">Главная</a>
+            </li>
+            <li class="bread-crumb__list-item">
+              <a href="./coaches.html">Гренеры</a>
             </li>
             <li class="bread-crumb__list-item bread-crumb__list-item--active" aria-current="page">
-              Контакты
+              Щербин Матвей Дмитриевич
             </li>
           </ul>
         </div>
       </div>
 
-      <section class="page-contacts">
+      <section class="coaches-user">
         <div class="container">
-          <div class="page-contacts__content">
-            <h1 class="page-title page-contacts__title">
-              Наши контакты
-            </h1>
-            <div class="page-contacts__content-item">
-              <p class="page-contacts__content-text">
-                г.Екатеринбург
-              </p>
-              <p class="page-contacts__content-text">
-                ул. Авиационная, 10 (Южный Автовокзал)
-              </p>
-              <p class="page-contacts__content-text">
-                ул. Хохрякова, 48 (КД "Тихвинъ")
-              </p>
-            </div>
-
-            <a class="page-contacts__content-tell" href="tel:+73432712011">
-              +7 (343) 271-20-11
-            </a>
+          <div class="coaches-user__top">
+            <h2 class="page-title coaches-user__title">
+              Щербин Матвей Дмитриевич
+            </h2>
+            <img class="coaches-user__img" src="./images/coaches/Shcherbin.webp" alt="">
           </div>
 
-          <div class="page-contacts__bottom">
-            <div class="page-contacts__map map" id="map"> </div>
+          <ul class="coaches-user__list">
+            <h5 class="coaches-user__list-title">
+              Главный тренер, директор и основатель шахматной школы "ШахМатOff"
+            </h5>
+            <a class="coaches-user__text-link" target="_blank"
+              href=" https://ratings.fide.com/card.phtml?event=24125164">
+              Ссылка на личную карточку шахматной федерации FIDE
+            </a>
+            <li class="coaches-user__text">30 лет (01.12.1992); </li>
+            <li class="coaches-user__text">Международный мастер по шахматам с 2010 г.; </li>
+            <li class="coaches-user__text">Лицензированный Тренер FIDE;</li>
+            <li class="coaches-user__text">Образование высшее (Информатик-экономист);</li>
+            <li class="coaches-user__text"> Многократный чемпион города, области, УрФО;</li>
+            <li class="coaches-user__text">Многократный чемпион России среди студентов в составе команды УрГУПС;</li>
+            <li class="coaches-user__text">Чемпион Европы в составе команды РЖД (Париж, 2017);</li>
+            <li class="coaches-user__text">Опыт преподавания шахмат более 10 лет: от 3-летних детей до успешных
+              бизнесменов;</li>
+            <li class="coaches-user__text">Тренировал членов сборной Камеруна по шахматам;</li>
+            <li class="coaches-user__text">Успешно закончил аспирантуру РГППУ (тема диссертации – “Шахматы как
+              инструмент развития логики у молодых специалистов”);</li>
+            <li class="coaches-user__text">Ученики – призеры соревнований, быстро выполняют разряды.</li>
+          </ul>
+
+          <div class="coaches-user__img-items">
+            <div class="coaches-user__img-item">
+              <img src="./images/coaches/Shcherbin/diplom.webp" alt="">
+            </div>
+            <div class="coaches-user__img-item">
+              <img src="./images/coaches/Shcherbin/fo_qpb04gag.webp" alt="">
+            </div>
+            <div class="coaches-user__img-item">
+              <img src="images/coaches/Shcherbin/eoooozovxja.webp" alt="">
+            </div>
+            <div class="coaches-user__img-item">
+              <img src="images/coaches/Shcherbin/aspirantura_0.webp" alt="">
+            </div>
           </div>
 
         </div>
       </section>
 
+      <div class="coach-news">
+        <div class="container">
+          <h5 class="coach-news__title">
+            СМИ о тренере:
+          </h5>
+          <ul class="coach-news__items">
+            <li class="coach-news__item">
+              <a class="coach-news__link" href="https://www.zg66.ru/publications/sport/4932-40-matvei-sherbin.html"
+                target="_blank">
+                "Тренер по шахматам стал лучшим на первенстве России"
+              </a>
+              <p class="coach-news__text">
+                - газета "Золотая горка"
+              </p>
+            </li>
+            <li class="coach-news__item">
+              <a class="coach-news__link"
+                href="http://chess66.com/sportivnie-novosti/v-berezovskom-sostoyalas-seriya-novogodnix-shaxmatnyx-turnirov/"
+                target="_blank">
+                "В Березовском состоялась серия новогодних шахматных турниров"
+              </a>
+              <p class="coach-news__text">
+                - ФШ Свердловской обл.
+              </p>
+            </li>
+            <li class="coach-news__item">
+              <a class="coach-news__link"
+                href="https://ruchess.ru/news/all/matvei_sherbin_okazalsya_luchim_v_ekaterinburge/" target="_blank">
+                "Матвей Щербин оказался лучшим в Екатеринбурге"
+              </a>
+              <p class="coach-news__text">
+                - РШФ
+              </p>
+            </li>
+            <li class="coach-news__item">
+              <a class="coach-news__link" href="" target="_blank">
+                "Международный мастер Матвей Щербин стал победителем рапид-турнира"
+              </a>
+              <p class="coach-news__text">
+                - uralchess.ru
+              </p>
+            </li>
+            <li class="coach-news__item">
+              <a class="coach-news__link"
+                href="https://www.rfsolokomotiv.ru/article/2778-rossiyskie-shahmatisty-sobrali-kollekciyu-parizhskih-nagrad/"
+                target="_blank">
+                "Российские шахматисты собрали коллекцию парижских наград"
+              </a>
+              <p class="coach-news__text">
+                - rfsolokomotiv.ru
+              </p>
+            </li>
+          </ul>
+        </div>
+      </div>
 
     </main>
     <footer class="footer">
