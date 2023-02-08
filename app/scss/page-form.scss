@@ -71,7 +71,7 @@
         width: 100%;
 
         outline: none;
-        border: none;
+        border: transparent;
 
         @media (max-width: $breakpoint576) {
             height: 25px;
@@ -83,7 +83,6 @@
         background: rgb(247, 216, 216);
         // color: red;
     }
-
     &__input:focus {
         border: 1px solid rgb(255, 186, 0);
     }
@@ -93,8 +92,12 @@
         height: 100px;
         resize: none;
         padding: 5px 10px;
+        border: transparent;
     }
 
+    textarea.form__input:focus {
+        border: 1px solid rgb(255, 186, 0);
+    }
     &__button {
         // font-size: 18px;
         // font-weight: 500;
