@@ -10,11 +10,12 @@
 .form {
     background-color: #2d3038;
     max-width: 500px;
-    padding: 50px 40px;
+    padding: 30px 40px;
     margin: 0 auto;
     color: #fff;
     border-radius: 20px;
     position: relative;
+    box-shadow: 5px 5px 10px 6px rgba(74, 76, 78, 0.2);
 
     &::after {
         content: "";
@@ -40,20 +41,29 @@
 
     &__title {
         text-align: center;
-        margin: 0 0 30px 0;
+        margin: 0 0 25px 0;
+        font-size: 24px;
+
+        @media (max-width: $breakpoint576) {
+            font-size: 20px;
+        }
     }
     &__item {
         // max-width: 350px;
-        margin: 0 0 20px 0;
+        margin: 0 0 15px 0;
     }
     &__label {
         display: block;
-        margin: 0 0 10px 0;
-        font-size: 18px;
+        margin: 0 0 5px 0;
+        font-size: 16px;
         font-weight: 400;
+
+        @media (max-width: $breakpoint576) {
+            font-size: 12px;
+        }
     }
     &__input {
-        font-size: 18px;
+        font-size: 16px;
         margin: 0 auto;
         height: 30px;
         padding: 0 10px;
@@ -62,10 +72,15 @@
 
         outline: none;
         border: none;
+
+        @media (max-width: $breakpoint576) {
+            height: 25px;
+            font-size: 12px;
+        }
     }
 
     &__input._error {
-        background: red;
+        background: rgb(247, 216, 216);
         // color: red;
     }
 
@@ -92,10 +107,16 @@
 }
 .options {
     &__item {
-        font-size: 18px;
+        font-size: 16px;
+        @media (max-width: $breakpoint576) {
+            font-size: 12px;
+        }
     }
     &__input {
         cursor: pointer;
+        @media (max-width: $breakpoint576) {
+            font-size: 12px;
+        }
     }
     &__label {
         cursor: pointer;
@@ -107,13 +128,21 @@
         cursor: pointer;
     }
     &__label {
-        font-size: 18px;
+        font-size: 16px;
         font-weight: 500;
+
+        @media (max-width: $breakpoint576) {
+            font-size: 12px;
+        }
 
         a {
             color: rgb(255, 186, 0);
             font-weight: 500;
             font-size: 16px;
+
+            @media (max-width: $breakpoint576) {
+                font-size: 12px;
+            }
         }
         a:hover {
             text-decoration: underline;
