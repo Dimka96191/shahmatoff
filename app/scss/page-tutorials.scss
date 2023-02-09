@@ -2,6 +2,10 @@
     &__wrapper {
     }
     &__title {
+
+        @media (max-width: $breakpoint768) {
+            font-size: 16px;
+        }
     }
     &__content {
     }
@@ -21,6 +25,10 @@
 
             color: #f88500;
         }
+
+        @media (max-width: $breakpoint768) {
+            font-size: 12px;
+        }
     }
 
     &__content {
@@ -39,6 +47,10 @@
 
     &__text {
         padding-top: 30px;
+
+        @media (max-width: $breakpoint768) {
+            font-size: 12px;
+        }
         a {
             color: #f88500;
             font-weight: 500;
@@ -59,6 +71,10 @@
         display: block;
         text-decoration: underline;
         color: #000000;
+
+        @media (max-width: $breakpoint768) {
+            font-size: 12px;
+        }
 
         &:hover {
             color: #f88500;

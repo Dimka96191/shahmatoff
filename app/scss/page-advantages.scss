@@ -1,0 +1,41 @@
+.page-advantages {
+    &__wrapper {
+    }
+    &__title {
+    }
+    &__content {
+        margin-top: 30px;
+    }
+    &__items {
+    }
+    &__items-title {
+        font-weight: 800;
+        font-size: 18px;
+        line-height: calc(35 / 30);
+        color: #333333;
+        margin-bottom: 15px;
+    }
+    &__items-item {
+        padding-left: 18px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.7;
+        color: #000000;
+        position: relative;
+
+        &::after {
+            position: absolute;
+            content: "";
+            width: 5px;
+            height: 5px;
+            border-radius: 100%;
+            background: rgb(255, 186, 0);
+            top: 11px;
+            left: 0;
+        }
+
+        @media (max-width: $breakpoint768) {
+            font-size: 12px;
+        }
+    }
+}

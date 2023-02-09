@@ -14,7 +14,6 @@
 }
 .side-bar {
     flex: 0 1 25%;
-    // padding-left: 15px;
 
     &__wrapper {
         background: #fafafa;
@@ -29,18 +28,34 @@
         color: #333333;
         padding-top: 40px;
         text-align: center;
+        padding-top: 15px;
 
         @media (max-width: $breakpoint1200) {
+            font-size: 16px;
+        }
+
+        @media (max-width: $breakpoint992) {
             font-size: 14px;
+        }
+        @media (max-width: $breakpoint768) {
+            font-size: 12px;
         }
     }
     &__nav-list {
         margin-top: 25px;
         padding-bottom: 30px;
+
+        @media (max-width: $breakpoint768) {
+            margin-top: 15px;
+            padding-bottom: 15px;
+        }
     }
     &__nav-item {
         padding: 8px 30px 8px;
-        // padding-left: 30px;
+
+        @media (max-width: $breakpoint768) {
+            padding: 4px 30px 4px;
+        }
     }
     &__nav-item--active {
         background: #f88500;
@@ -67,6 +82,10 @@
     width: 100%;
     box-shadow: 0px 5px 10px 6px rgba(202, 204, 206, 0.2);
     padding: 30px 30px 40px 30px;
+
+    @media (max-width: $breakpoint768) {
+        padding: 20px;
+    }
 }
 
 .page__title {
@@ -78,13 +97,16 @@
     @media (max-width: $breakpoint768) {
         font-size: 20px;
     }
+
+    @media (max-width: $breakpoint576) {
+        font-size: 18px;
+    }
 }
 
 .page-school {
     &__wrapper {
     }
     &__title {
-        
     }
     &__top {
         display: flex;

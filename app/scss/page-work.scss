@@ -1,0 +1,37 @@
+.page-work {
+    &__wrapper {
+    }
+    &__title {
+    }
+    &__content {
+    }
+    &__items {
+        margin-top: 25px;
+    }
+    &__items-item {
+        
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.7;
+        color: #000000;
+        position: relative;
+    }
+    &__item-link {
+        color: #000000;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 1.7;
+        color: #000000;
+
+        font-weight: 500;
+
+        @media (max-width: $breakpoint768) {
+            font-size: 14px;
+        }
+
+        &:hover {
+            color: #f88500;
+            text-decoration: underline;
+        }
+    }
+}
