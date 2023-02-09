@@ -4,14 +4,16 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ШахМатOff шахматная школа в Екатеринбурге</title>
+  <title>Тренеры</title>
   <link rel="stylesheet" href="css/style.min.css" />
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU" type="text/javascript">
+  </script>
 </head>
 
 <body>
   <div class="wrapper">
     <header>
-      <div class="header" id="1">
+      <div class="header">
         <div class="container">
           <div class="navbar">
             <div class="logo">
@@ -23,10 +25,10 @@
                   <a href="./index.html" class="menu__item-link" date-scroll>Главная</a>
                 </li>
                 <li class="menu__item dropdown-list">
-                  <a href="./school.html" class="menu__item-link" date-scroll>О школе</a>
+                  <a href="#" class="menu__item-link" date-scroll>О нас</a>
                   <ul class="dropdown-list__items">
                     <li class="dropdown-list__item">
-                      <a href="#" class="dropdown-list__link"> О нас </a>
+                      <a href="#" class="dropdown-list__link"> О школе </a>
                     </li>
                     <li class="dropdown-list__item">
                       <a href="#" class="dropdown-list__link">
@@ -64,91 +66,138 @@
         </div>
       </div>
     </header>
-
+    </header>
     <main class="main">
-      <section class="sub-head">
-        <div class="container">
-          <div class="layers">
-            <div class="layer__text">
-              <h1>ШахМатOff</h1>
-              <p>Больше чем просто шахматная школа</p>
-            </div>
-            <div class="layer layers__base" style="background-image: url(./images/fone_top.png)"></div>
-            <div class="layer layers__middle" style="background-image: url(./images/fone_middle.png)"></div>
-            <div class="layer layers__front-top" style="background-image: url(./images/fone-bottom_top.png)"></div>
-            <div class="layer layers__front-bottom" style="background-image: url(./assets/fone-bottom_bottom.png)">
+      <div class="container">
+        <div class="page__wrapper">
+
+          <div class="side-bar">
+            <div class="side-bar__wrapper">
+              <h3 class="side-bar__title">
+                Информация о нас
+              </h3>
+              <ul class="side-bar__nav-list">
+                <li class="side-bar__nav-item side-bar__nav-item--active">
+                  <a href="#" class="side-bar__nav-link">
+                    О школе
+                  </a>
+                </li>
+                <li class="side-bar__nav-item">
+                  <a href="#" class="side-bar__nav-link">
+                    Преимущества
+                  </a>
+                </li>
+                <li class="side-bar__nav-item">
+                  <a href="#" class="side-bar__nav-link">
+                    Видеоуроки
+                  </a>
+                </li>
+                <li class="side-bar__nav-item">
+                  <a href="#" class="side-bar__nav-link">
+                    Расписание филиалов
+                  </a>
+                </li>
+              </ul>
             </div>
           </div>
-        </div>
-      </section>
 
-      <article class="welcom">
-        <div class="container">
-          <div class="post__header">
-            <div class="thumb-wrap">
-              <iframe src="https://www.youtube.com/embed/nck33lBOvTk"></iframe>
-            </div>
-          </div>
-        </div>
-      </article>
+          <section class="page-school">
+            <div class="page-school__wrapper">
+              <h2 class="page-school__title">
+                О шахматной школе <span>«ШахМатOff»</span>
+              </h2>
+              <div class="page-school__top">
+                <div class="page-school__top-text">
+                  <p>
+                    Вас приветствует шахматная школа “ШахМатOff”!
+                  </p>
+                  <p>
+                    Миссия нашей школы - обучение детей и взрослых по индивидуальным программам согласно поставленным
+                    целям: от общего развития до достижения наивысших результатов в турнирах, выполнения
+                    разрядов/званий.
+                  </p>
+                  <p>
+                    Прежде всего мы развиваем ребёнка, а станет ли он шахматистом – покажет время. Считается, что
+                    наиболее
+                    оптимальный возраст для начала обучения шахматам – 4-7 лет. В этом возрасте дети очень быстро
+                    воспринимают новую информацию. Вы можете ознакомиться со <a href="#" class="">статьей</a> нашего
+                    тренера о том, в каком
+                    возрасте лучше отдавать ребенка в шахматы
+                  </p>
+                </div>
+                <!-- <img class="page-school__top-img" src="./images/989898989998.webp" alt="ШахМатOff"> -->
+              </div>
+              <ul class="page-school__list">
+                <h5 class="page-school__list-title">
+                  Для вашего удобства мы организовали несколько форматов занятий:
+                </h5>
+                <li class="page-school__list-item">
+                  в небольшой группе (6-8 учеников: при таком количестве сохраняется индивидуальный подход);
+                </li>
+                <li class="page-school__list-item">
+                  индивидуально с выбранным тренером;
+                </li>
+                <li class="page-school__list-item">
+                  по Skype, не выходя из дома (удобно для учеников из других регионов или проживающих в отдаленных
+                  районах
+                  города);
+                </li>
+                <li class="page-school__list-item">
+                  выезд тренера домой к ученику (по договоренности с выбранным тренером).
+                </li>
+              </ul>
+              <ul class="page-school__list">
+                <h5 class="page-school__list-title">
+                  Каждое занятие включает в себя:
+                </h5>
+                <li class="page-school__list-item">
+                  Проверку домашнего задания и повторение пройденного материала;
+                </li>
+                <li class="page-school__list-item">
+                  Решение логических задач;
+                </li>
+                <li class="page-school__list-item">
+                  Изучение новой темы;
+                </li>
+                <li class="page-school__list-item">
+                  Разыгрывание типовых позиций, изученных на этом и прошлых уроках;
+                </li>
+                <li class="page-school__list-item">
+                  Игровая практика друг с другом.
+                </li>
+              </ul>
 
-      <div class="page-trust">
-        <div class="container">
-          <div class="page-trust__content">
-            <div class="page-trust__content-items">
-              <div class="page-trust__content-item">
-                <h3 class="page-trust__title">Наши достоинства</h3>
-                <div class="page-trust__list">
-                  <ul class="page-trust__list-items">
-                    <li class="page-trust__list-item">
-                      <p class="page-trust__list-text">
-                        К каждому ученику мы находим свой индивидуальный
-                        подход;
-                      </p>
-                    </li>
-                    <li class="page-trust__list-item">
-                      <p class="page-trust__list-text">
-                        У нас работают лучшие тренеры Урала;
-                      </p>
-                    </li>
-                    <li class="page-trust__list-item">
-                      <p class="page-trust__list-text">
-                        У нас <span>2</span> филиала по городу;
-                      </p>
-                    </li>
-                  </ul>
-                  <ul class="page-trust__list-items">
-                    <li class="page-trust__list-item">
-                      <p class="page-trust__list-text">
-                        Вы можете выбрать подходящую форму занятий;
-                      </p>
-                    </li>
-                    <li class="page-trust__list-item">
-                      <p class="page-trust__list-text">
-                        Мы гарантируем результат;
-                      </p>
-                    </li>
-                    <li class="page-trust__list-item">
-                      <p class="page-trust__list-text">
-                        Работаем при поддержке Федерации Шахмат Свердловской
-                        Области.
-                      </p>
-                    </li>
-                  </ul>
+              <div class="page-school__text">
+                <p>
+                  Длительность занятия отличается в зависимости от возраста, формы обучения и уровня подготовки
+                  учеников.
+                </p>
+                <p>
+                  В шахматной школе занятия ведут лучшие тренеры г. Екатеринбурга, имеющие большой опыт и отличные
+                  результаты. Наши ученики - призёры и победители первенств города, области, участвуют на Чемпионатах
+                  России, Европы, Мира.
+                </p>
+                <p>
+                  В случае если у Вас возникли вопросы, Вы всегда можете обратиться к нам по телефону <a
+                    href="tel:+73432712011">+7 (343) 271-20-11</a>,
+                  почте <a href="mailto:Chess-School.ekb@yandex.ru">Chess-School.ekb@yandex.ru</a> или
+                  воспользовавшись онлайн-консультантом на сайте.
+                </p>
+                <p>До встречи на занятиях,</p>
+                <p>Шахматная школа для детей и взрослых в Екатеринбурге “ШахМатOff”!</p>
+              </div>
+
+              <div class="page-school__diplomas">
+                <div class="page-school__diplomas-title">
+                  Дипломы о присвоении званий наших тренеров
+                </div>
+                <div class="page-school__diplomas-content">
+                  <img src="./images/coaches/diplomas/shcherbin.webp" alt="" class="page-school__diplomas-img">
+                  <img src="./images/coaches/diplomas/schariiazdanov.webp" alt="" class="page-school__diplomas-img">
                 </div>
               </div>
-              <div class="page-trust__content-right">
-                <div class="page-trust__content-text">
-                  <p>Позвоните нам или оставьте заявку с сайта.</p>
-                  <p>Мы перезвоним вам в течение 10 минут.</p>
-                </div>
-                <a href="tel:+73432712011" class="page-trust__content-tell">
-                  +7 (343) 271-20-11
-                </a>
-                <a href="./zakazat-zvonok.html" class="btn">Оформить заявку сейчас</a>
-              </div>
             </div>
-          </div>
+          </section>
         </div>
       </div>
     </main>
