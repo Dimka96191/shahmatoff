@@ -36,7 +36,12 @@ function images() {
 }
 
 function scripts() {
-  return src(["app/js/main.js"])
+  return src([
+    "node_modules/jquery/dist/jquery.js",
+    "app/js/main.js",
+    "node_modules/slick-slider/slick/slick.min.js",
+    "node_modules/swiper/swiper-bundle.js"
+  ])
     .pipe(concat("main.min.js"))
     .pipe(uglify())
     .pipe(dest("app/js"))

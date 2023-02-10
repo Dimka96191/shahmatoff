@@ -1,3 +1,30 @@
+$(function () {
+  
+  
+  const swiper = new Swiper('.swiper',{
+    autoplay: {
+      delay: 10000,
+      stopOnLastSlide: false,
+      disableOnInteraction: false
+    },
+    speed: 1400,
+  });
+
+
+
+  $('.slider-carousel').slick({
+    dots: true,
+    infinite: false,
+    arrows: false,
+    speed: 800,
+    slidesToShow: 3,
+    slidesToScroll: 3,
+  });
+
+
+
+})
+
 // Мобильное меню бургер
 function burgerMenu() {
   const burger = document.querySelector(".burger");
@@ -28,7 +55,12 @@ burgerMenu();
 // import "../css/style.min.css";
 
 // parallax
-window.addEventListener("scroll", () => {
-  document.body.style.cssText = `--scrollTop: ${window.scrollY}px`;
-});
+// window.addEventListener("scroll", () => {
+//   document.body.style.cssText = `--scrollTop: ${window.scrollY}px`;
+// });
+
+
+
+
+
 

@@ -1,0 +1,22 @@
+.section-welcome {
+    padding: 50px 0 150px;
+    background-color: #2d3038;
+    &__wrapper {
+        background: #fff;
+        padding: 40px 25px 25px;
+
+        box-shadow: 0px 5px 10px 6px rgba(202, 204, 206, 0.2);
+    }
+    &__title {
+        padding: 25px 25px 25px;
+    }
+    &__content {
+        margin-top: 30px;
+        overflow: hidden;
+    }
+
+    &__content iframe {
+        width: 100%;
+        aspect-ratio: 16 / 9;
+    }
+}

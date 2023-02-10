@@ -22,7 +22,10 @@
     "gulp-uglify-es": "^2.0.0"
   },
   "dependencies": {
+    "jquery": "^3.6.3",
     "puppeteer": "^19.6.3",
-    "sass": "^1.50.1"
+    "sass": "^1.50.1",
+    "slick-slider": "^1.8.2",
+    "swiper": "^9.0.3"
   }
 }
