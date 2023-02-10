@@ -1,10 +1,22 @@
 .section-work {
     margin-top: -120px;
     padding: 30px 0px 60px;
+
+
+    @media (max-width: $breakpoint480) {
+        padding: 20px 0px 40px;
+    }
+
+
     &__items {
         display: flex;
         justify-content: space-between;
         gap: 30px;
+
+        @media (max-width: $breakpoint768) {
+            flex-direction: column;
+            
+        }
     }
     &__item {
         padding: 15px 20px;
@@ -27,6 +39,13 @@
         line-height: 1.2;
         font-weight: 600;
         color: #333333;
+        margin-right: 10px;
+
+
+        @media (max-width: $breakpoint480) {
+            font-size: 18px;
+           
+        }
     }
     &__item-img {
         max-width: 200px;

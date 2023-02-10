@@ -1,18 +1,35 @@
 .section-welcome {
     padding: 50px 0 150px;
     background-color: #2d3038;
+
     &__wrapper {
         background: #fff;
         padding: 40px 25px 25px;
 
         box-shadow: 0px 5px 10px 6px rgba(202, 204, 206, 0.2);
+
+        @media (max-width: $breakpoint768) {
+            padding: 20px 10px 10px;
+        }
     }
     &__title {
         padding: 25px 25px 25px;
+
+        @media (max-width: $breakpoint768) {
+            padding: 0px 00px 00px;
+        }
+
+        @media (max-width: $breakpoint576) {
+            font-size: 20px;
+        }
     }
     &__content {
         margin-top: 30px;
         overflow: hidden;
+
+        @media (max-width: $breakpoint768) {
+            margin-top: 15px;
+        }
     }
 
     &__content iframe {

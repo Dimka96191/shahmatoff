@@ -1,7 +1,7 @@
 $(function () {
-  
-  
-  const swiper = new Swiper('.swiper',{
+
+
+  const swiper = new Swiper('.swiper', {
     autoplay: {
       delay: 10000,
       stopOnLastSlide: false,
@@ -19,6 +19,26 @@ $(function () {
     speed: 800,
     slidesToShow: 3,
     slidesToScroll: 3,
+    // centerMode: true,
+    // variableWidth: true,
+    responsive: [
+      {
+        breakpoint: 1200,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          
+        },
+      },
+    ],
+
   });
 
 
