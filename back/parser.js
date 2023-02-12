@@ -1,6 +1,9 @@
 // const config = require("./config");
 const puppeteer = require("puppeteer");
 
+const fs = require("fs");
+const { stringify } = require("querystring");
+
 const sleep = (ms) =>
   new Promise((res) => {
     setTimeout(res, ms);
@@ -12,44 +15,25 @@ const sleep = (ms) =>
   // await page.goto("https://vk.com");
   await page.goto("https://vk.com/chessekb");
 
-  // await page.$eval(
-  //   "#index_email",
-  //   (elem, login) => {
-  //     elem.value = login;
-  //   },
-  //   config.login
-  // );
-
-  // await page.$eval(
-  //   "#index_pass",
-  //   (elem, pass) => {
-  //     elem.value = pass;
-  //   },
-  //   config.password
-  // );
-
-  await page.evaluate(() => {
-    window.scrollBy(0, document.body.scrollHeight);
-  });
-
+  // await page.evaluate(() => {
+  //   window.scrollBy(0, document.body.scrollHeight);
+  // });
+  // await page.screenshot({ path: "example.png" });
   // await sleep(1000);
 
   // await page.evaluate(() => {
   //   window.scrollBy(0, document.body.scrollHeight);
   // });
-  await page.click("button.UnauthActionBox__close");
-  await sleep(100);
-  await page.evaluate(() => {
-    window.scrollBy(0, document.body.scrollHeight);
-  });
+  // await page.click("button.UnauthActionBox__close");
+  // await sleep(100);
+  // await page.evaluate(() => {
+  //   window.scrollBy(0, document.body.scrollHeight);
+  // });
 
   // await sleep(1500);
 
-  // page.on("console", (msg) => {
-  //   console.log("PAGE LOG: ", msg.text());
-  // });
-
   const result = await page.$$eval(".post", (elements) => {
+    console.log("elements", elements);
     let data = [];
     for (const el of elements) {
       if (el.querySelector(".wall_post_text")) {
@@ -58,6 +42,8 @@ const sleep = (ms) =>
           el.querySelector(".wall_post_text").innerHTML &&
           el.querySelector(".wall_post_text").innerText
         ) {
+          // fs.writeFileSync("hello.js", "sfdfdfdfdfdfdfdgfdg");
+          // fs.writeFile("hello.js", "Привет МИГ-29!");
           data.push({
             text: el.querySelector(".wall_post_text").innerHTML,
             data: el.querySelector(".wall_post_text").innerText,
@@ -65,10 +51,23 @@ const sleep = (ms) =>
         }
       }
     }
+    console.log("end");
+    console.log("data", data);
     return data;
   });
-  console.log(result);
-  // await page.screenshot({ path: "example.png" });
+  console.log("result", result);
+  fs.writeFileSync("hello.js", JSON.stringify(result));
+  //   console.log("нАЧИНАЕМ ЗАПИСЬ");
+
+  //   fs.writeFile("hello.js", result, function (error) {
+  //     if (error) throw error; // если возникла ошибка
+  //     console.log("Асинхронная запись файла завершена. Содержимое файла:");
+  //     let data = fs.readFileSync("hello.js", "utf8");
+  //     console.log(data); // выводим считанные данные
+  //   });
+
+  //   console.log("Закончили ЗАПИСЬ");
+  //   // await page.screenshot({ path: "example.png" });
   await browser.close();
 })();
 
