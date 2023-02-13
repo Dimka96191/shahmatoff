@@ -45,7 +45,7 @@ const sleep = (ms) =>
           // fs.writeFileSync("hello.js", "sfdfdfdfdfdfdfdgfdg");
           // fs.writeFile("hello.js", "Привет МИГ-29!");
           data.push({
-            text: el.querySelector(".wall_post_text").innerHTML,
+            // text: el.querySelector(".wall_post_text").innerHTML,
             data: el.querySelector(".wall_post_text").innerText,
           });
         }
@@ -56,7 +56,7 @@ const sleep = (ms) =>
     return data;
   });
   console.log("result", result);
-  fs.writeFileSync("hello.js", JSON.stringify(result));
+  fs.writeFileSync("app/js/dataBase.json", JSON.stringify(result));
   //   console.log("нАЧИНАЕМ ЗАПИСЬ");
 
   //   fs.writeFile("hello.js", result, function (error) {
