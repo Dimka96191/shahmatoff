@@ -35,6 +35,7 @@ const sleep = (ms) =>
   const result = await page.$$eval(".post", (elements) => {
     console.log("elements", elements);
     let data = [];
+    let pattern = /\n/g;
     for (const el of elements) {
       if (el.querySelector(".wall_post_text")) {
         const textEl = el.querySelector(".wall_post_text");
@@ -46,7 +47,10 @@ const sleep = (ms) =>
           // fs.writeFile("hello.js", "Привет МИГ-29!");
           data.push({
             // text: el.querySelector(".wall_post_text").innerHTML,
-            data: el.querySelector(".wall_post_text").innerText,
+
+            data: el
+              .querySelector(".wall_post_text")
+              .innerText.replace(pattern, " "),
           });
         }
       }
@@ -56,7 +60,23 @@ const sleep = (ms) =>
     return data;
   });
   console.log("result", result);
-  fs.writeFileSync("app/js/dataBase.json", JSON.stringify(result));
+  fs.writeFileSync("app/js/dataBase.json", "data = '");
+  fs.appendFile(
+    "app/js/dataBase.json",
+    JSON.stringify(result),
+    function (error) {
+      if (error) throw error; // если возникла ошибка
+
+      console.log("Запись файла завершена. Содержимое файла:");
+      let data = fs.readFileSync("app/js/dataBase.json", "utf8");
+      console.log(data); // выводим считанные данные
+    }
+  );
+  fs.appendFile("app/js/dataBase.json", "'", function (error) {
+    if (error) throw error; // если возникла ошибка
+
+    console.log("Запись файла over завершена. Содержимое файла:");
+  });
   //   console.log("нАЧИНАЕМ ЗАПИСЬ");
 
   //   fs.writeFile("hello.js", result, function (error) {

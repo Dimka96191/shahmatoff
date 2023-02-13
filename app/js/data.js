@@ -43,21 +43,37 @@ console.log(posts);
 // console.log(posts);
 
 if (posts.length != 0) {
-  for (post of posts) {
+  let i = 0;
+  while (posts.length > i) {
     const wrapper = document.querySelector(".wrapper_posts");
-    let i = 0;
-
     let div = document.createElement("div");
     div.classList = "getPost";
     let p = document.createElement("p");
-    p.innerText = post.textContent;
+    p.innerText = posts[i].data;
     div.append(p);
-    let h2 = document.createElement("h2");
-    h2.innerText = post.header;
-    div.append(h2);
+    // let h2 = document.createElement("h2");
+    // h2.innerText = post.header;
+    // div.append(h2);
     // wrapper.createElement("div");
     wrapper.append(div);
+
+    i++;
   }
+  // for (post of posts[0].data) {
+  //   const wrapper = document.querySelector(".wrapper_posts");
+  //   let i = 0;
+
+  //   let div = document.createElement("div");
+  //   div.classList = "getPost";
+  //   let p = document.createElement("p");
+  //   p.innerText = post.textContent;
+  //   div.append(p);
+  //   let h2 = document.createElement("h2");
+  //   h2.innerText = post.header;
+  //   div.append(h2);
+  //   // wrapper.createElement("div");
+  //   wrapper.append(div);
+  // }
 } else {
   const wrapper = document.querySelector(".wrapper_posts");
   let h2 = document.createElement("h2");
