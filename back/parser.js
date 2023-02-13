@@ -51,6 +51,9 @@ const sleep = (ms) =>
             data: el
               .querySelector(".wall_post_text")
               .innerText.replace(pattern, " "),
+            // text: el
+            //   .querySelector(".wall_post_text")
+            //   .innerHTML.replace(pattern, " "),
           });
         }
       }
