@@ -30,6 +30,20 @@
         @media (max-width: $breakpoint768) {
             margin-top: 15px;
         }
+
+       
+    }
+
+    &__content-box {
+    }
+
+    &__content-video {
+        width: 100%;
+        aspect-ratio: 16 / 9;
+        display: flexbox;
+        poster {
+            width: 100%;
+        }
     }
 
     &__content iframe {

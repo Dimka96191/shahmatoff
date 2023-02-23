@@ -72,8 +72,10 @@
         flex: 0 0 350px;
         display: flex;
         flex-direction: column;
-        // justify-content: space-between;
+        justify-content: space-between;
         text-align: right;
+
+        
 
         @media (max-width: $breakpoint992) {
             margin-top: 30px;
@@ -98,7 +100,7 @@
 
         @media (max-width: $breakpoint480) {
             font-size: 14px;
-          }
+        }
     }
     &__content-tell {
         font-weight: 700;
@@ -109,7 +111,7 @@
         color: #fff;
 
         @media (max-width: $breakpoint992) {
-          margin-top: 20px;
+            margin-top: 20px;
         }
     }
 }

@@ -1,6 +1,10 @@
 .page-blog {
     // padding: 0 0 40px;
 
+    .container {
+        display: flex;
+    }
+
     @media (min-width: $breakpoint480) {
         background: #fafafa;
     }

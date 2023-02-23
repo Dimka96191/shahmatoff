@@ -3,11 +3,23 @@ $(function () {
 
   const swiper = new Swiper('.swiper', {
     autoplay: {
-      delay: 10000,
+      delay: 5000,
       stopOnLastSlide: false,
       disableOnInteraction: false
     },
-    speed: 1400,
+    speed: 1800,
+
+    effect: 'creative',
+    creativeEffect: {
+      prev: {
+        // will set `translateZ(-400px)` on previous slides
+        translate: [0, 0, -400],
+      },
+      next: {
+        // will set `translateX(100%)` on next slides
+        translate: ['100%', 0, 0],
+      },
+    },
   });
 
 
@@ -34,7 +46,7 @@ $(function () {
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
-          
+
         },
       },
     ],
@@ -72,6 +84,27 @@ function burgerMenu() {
 }
 burgerMenu();
 
+
+
+// Аккардион 
+
+function akkardion() {
+  let table = document.getElementsByClassName('page-cost__table');
+  for (let i = 0; i < table.length; i++) {
+    table[i].addEventListener('click', function () {
+      this.classList.toggle('page-cost__table--active');
+      // let content = this.nextElementSibling;
+      // if (content.style.maxHeight) {
+      //   content.style.maxHeight = null;
+      // } else {
+      //   content.style.maxHeight = 100 + '%'
+      // }
+
+    })
+  }
+}
+akkardion();
+
 // import "../css/style.min.css";
 
 // parallax
@@ -83,4 +116,19 @@ burgerMenu();
 
 
 
+// Постер на видео
 
+// $(function() {
+//   var videos  = $(".section-welcome__content");
+//       videos.on("click", function(){
+//           var elm = $(this),
+//               conts   = elm.contents(),
+//               le      = conts.length,
+//               ifr     = null;
+//           for(var i = 0; i<le; i++){
+//             if(conts[i].nodeType == 8) ifr = conts[i].textContent;
+//           }
+//           elm.addClass("player").html(ifr);
+//           elm.off("click");
+//       });
+// });
