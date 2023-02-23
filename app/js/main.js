@@ -89,16 +89,10 @@ burgerMenu();
 // Аккардион 
 
 function akkardion() {
-  let table = document.getElementsByClassName('page-cost__table');
+  let table = document.getElementsByClassName('page-cost__table-top');
   for (let i = 0; i < table.length; i++) {
     table[i].addEventListener('click', function () {
-      this.classList.toggle('page-cost__table--active');
-      // let content = this.nextElementSibling;
-      // if (content.style.maxHeight) {
-      //   content.style.maxHeight = null;
-      // } else {
-      //   content.style.maxHeight = 100 + '%'
-      // }
+      this.parentElement.classList.toggle('page-cost__table--active');
 
     })
   }

@@ -41,15 +41,19 @@
         }
     }
 
-    &__table-title {
-        font-size: 18px;
-        line-height: 1.2;
-        font-weight: 600;
+    &__table-top {
         background: #e7e6e6;
         padding: 20px 10px 20px 10px;
 
         cursor: pointer;
         position: relative;
+    }
+
+    &__table-title {
+        font-size: 18px;
+        line-height: 1.2;
+        font-weight: 600;
+        margin-right: 40px;
 
         &::after {
             position: absolute;
@@ -135,6 +139,12 @@
             text-decoration: none;
             color: $color-accent;
             transition: 0.3s all ease;
+        }
+    }
+    &__table-item {
+        padding: 8px 0 8px 0;
+        &:not(:last-child) {
+            border-bottom: 1px solid $color-accent;
         }
     }
 }
