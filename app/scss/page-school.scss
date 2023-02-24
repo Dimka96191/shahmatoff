@@ -86,6 +86,11 @@
     @media (max-width: $breakpoint768) {
         padding: 20px;
     }
+
+    @media (max-width: $breakpoint480) {
+        box-shadow: none;
+        padding: 10px 0;
+    }
 }
 
 .page__title {

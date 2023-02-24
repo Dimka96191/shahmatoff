@@ -19,11 +19,10 @@
         line-height: 1.2;
     }
     &__content-tell {
-        margin-top: 15px;
         font-weight: 700;
         font-family: "Roboto", sans-serif;
         font-size: 28px;
-        line-height: calc(46 / 28);
+        line-height: calc(38 / 28);
         font-weight: 300;
         color: inherit;
 
@@ -32,10 +31,13 @@
             text-decoration: underline;
             transition: 0.3s all ease;
         }
+
+        &:not(:last-child) {
+            margin-top: 15px;
+        }
     }
     &__bottom {
         margin-top: 50px;
-        
     }
     &__map {
         margin: 0 auto;

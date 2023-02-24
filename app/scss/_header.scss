@@ -77,6 +77,12 @@
                 transform: scale(1);
             }
         }
+
+        @media (max-width: $breakpoint992) {
+            font-size: 20px;
+            margin-top: 5px;
+            margin-bottom: 5px;
+        }
     }
 
     .dropdown-list {
@@ -147,6 +153,28 @@
                 transition: 0.2s all;
             }
         }
+    }
+
+    &__item-contacts {
+        margin-top: 100px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        gap: 15px;
+
+        @media (min-width: $breakpoint992) {
+            display: none;
+        }
+    }
+    &__item-tell {
+        font-family: "Roboto", sans-serif;
+        font-size: 26px;
+        line-height: 1.6;
+        font-weight: 300;
+        color: #fff;
+    }
+    &__item-btn {
     }
 
     //Mobile menu styles

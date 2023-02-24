@@ -70,9 +70,9 @@ body {
 .btn {
   padding: 14px 30px;
   border: transparent;
-  display: block;
+ 
 
-  margin-left: auto;
+  // margin-left: auto;
   font-size: 16px;
   font-weight: 800;
   line-height: 1.1;
@@ -97,6 +97,7 @@ body {
   margin-top: 25px;
   &__list {
     display: flex;
+    align-items: center;
     background: #414447;
     color: #fff;
     font-size: 15px;
