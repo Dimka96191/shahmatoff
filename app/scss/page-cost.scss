@@ -1,4 +1,7 @@
 .page-cost {
+    @media (min-width: $breakpoint992) {
+        padding-top: 75px;
+    }
     &__wrapper {
         padding: 25px 0 10px;
 

@@ -12,6 +12,7 @@ body {
 body {
   font-family: $fontMain;
   font-weight: 400;
+
   // background: #000;
 
   &.locked {
@@ -70,13 +71,13 @@ body {
 .btn {
   padding: 14px 30px;
   border: transparent;
- 
 
   // margin-left: auto;
   font-size: 16px;
-  font-weight: 800;
+  font-weight: 500;
   line-height: 1.1;
   background-color: rgb(212, 159, 12);
+
   color: #fff;
   text-align: center;
   border-radius: 0 5px 0 5px;
@@ -85,8 +86,8 @@ body {
 
   &:hover {
     color: darken(#fff, 80%);
-    //  color: lighten(#fff, 15%);
-    background-color: lighten(rgb(212, 159, 12), 5%);
+
+    background-color: lighten(rgb(212, 159, 12), 1%);
     transition: 0.3s;
   }
 }
@@ -95,6 +96,10 @@ body {
 
 .bread-crumb {
   margin-top: 25px;
+
+  @media (min-width: $breakpoint992) {
+    padding-top: 100px;
+  }
   &__list {
     display: flex;
     align-items: center;
@@ -140,7 +145,6 @@ body {
   font-size: 32px;
   line-height: 1.2;
   font-weight: 600;
-    
 
   @media (max-width: $breakpoint768) {
     font-size: 24px;

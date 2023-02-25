@@ -1,11 +1,13 @@
 .header {
     background: #202328;
 
-    // position: fixed;
-    // left: 0;
-    // right: 0;
-    // top: 0;
-    // z-index: 99;
+    @media (min-width: $breakpoint992) {
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: 0;
+        z-index: 99;
+    }
 
     &.fixed {
         position: fixed;
@@ -21,6 +23,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 20px 0;
+    height: 75px;
 }
 
 .logo {
