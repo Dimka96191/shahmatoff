@@ -28,8 +28,9 @@
 
     &__table--active {
         .page-cost__table-content {
-            display: block;
-            transition: 1s all ease-in-out;
+            // display: block;
+            
+            transition: 0.3s all ease-in-out;
         }
 
         .page-cost__table-title {
@@ -88,9 +89,12 @@
     }
 
     &__table-content {
-        display: none;
-        padding: 0 10px 10px 10px;
+        // display: none;
+        max-height: 0;
+        padding: 0 10px 0 10px;
+        // margin-bottom: 10px;
         background: #f9f9f9;
+        transition: 0.3s all ease;
     }
     &__table-row {
         display: flex;

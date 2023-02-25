@@ -93,7 +93,12 @@ function akkardion() {
   for (let i = 0; i < table.length; i++) {
     table[i].addEventListener('click', function () {
       this.parentElement.classList.toggle('page-cost__table--active');
-
+      let content = this.nextElementSibling;
+      if (content.style.maxHeight) {
+        content.style.maxHeight = null;
+      } else {
+        content.style.maxHeight = content.scrollHeight + 'px';
+      }
     })
   }
 }
