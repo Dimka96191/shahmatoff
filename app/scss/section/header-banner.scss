@@ -1,0 +1,71 @@
+.header-banner {
+    padding: 20px 0 20px;
+    @media (min-width: $breakpoint992) {
+        // padding: 110px 0 30px;
+        padding: 90px 0 15px;
+    }
+
+    &__items {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        @media (max-width: $breakpoint768) {
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+    }
+    &__item {
+        display: flex;
+        flex-direction: column;
+        @media (max-width: $breakpoint768) {
+            padding-bottom: 5px;
+        }
+    }
+    &__title {
+        text-decoration: none;
+        color: $color-accent;
+        font-family: "Roboto";
+        font-size: 30px;
+        font-weight: 900;
+        line-height: calc(21 / 18);
+        @media (max-width: $breakpoint768) {
+            padding-bottom: 5px;
+        }
+    }
+    &__subtitle {
+        padding: 5px 0 0;
+        text-transform: uppercase;
+        font-family: "Roboto";
+        font-size: 18px;
+        color: rgb(161, 161, 161);
+        font-weight: 300;
+
+        @media (max-width: $breakpoint992) {
+            text-align: center;
+        }
+    }
+    &__content-tell {
+        font-weight: 700;
+        font-family: "Roboto", sans-serif;
+        font-size: 28px;
+        line-height: calc(46 / 28);
+        font-weight: 300;
+        color: $color-text-primary;
+        text-align: right;
+
+        &:hover {
+           color: rgba($color-accent, 0.7);
+        }
+
+        @media (max-width: $breakpoint768) {
+            padding-bottom: 5px;
+        }
+    }
+}
+.container {
+}
+.btn {
+}

@@ -146,6 +146,7 @@
 
     &__btn {
         margin: 50px auto 20px;
+        display: block;
         cursor: pointer;
 
         @media (max-width: $breakpoint480) {

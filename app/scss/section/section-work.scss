@@ -1,6 +1,6 @@
 .section-work {
     // margin-top: -120px;
-    padding: 30px 0px 60px;
+    padding: 20px 0px 60px;
 
 
     @media (max-width: $breakpoint480) {
@@ -24,13 +24,13 @@
         flex: 0 1 50%;
         align-items: center;
         justify-content: space-between;
-        box-shadow: 0px 5px 10px 6px rgba(202, 204, 206, 0.2);
-        background: #fafafa;
+        // box-shadow: 0px 5px 10px 6px rgba(202, 204, 206, 0.2);
+        background: $color-bg-dark-300;
         cursor: pointer;
 
         &:hover {
             transition: 0.3s all ease;
-            box-shadow: 0px 10px 15px 11px rgba(202, 204, 206, 0.4);
+            box-shadow: 0px 5px 10px 6px rgba(#fff, 0.1);
         }
     }
     &__item-title {
@@ -39,7 +39,7 @@
         font-size: 20px;
         line-height: 1.2;
         font-weight: 600;
-        color: #333333;
+        color: $color-text-primary;
         margin-right: 10px;
 
 

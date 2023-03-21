@@ -84,7 +84,7 @@
         // color: red;
     }
     &__input:focus {
-        border: 1px solid rgb(255, 186, 0);
+        border: 1px solid $color-accent;
     }
 
     textarea.form__input {
@@ -96,7 +96,7 @@
     }
 
     textarea.form__input:focus {
-        border: 1px solid rgb(255, 186, 0);
+        border: 1px solid $color-accent;
     }
     &__button {
         // font-size: 18px;
@@ -139,7 +139,7 @@
         }
 
         a {
-            color: rgb(255, 186, 0);
+            color: $color-accent;
             font-weight: 500;
             font-size: 16px;
 

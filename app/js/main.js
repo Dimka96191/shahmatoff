@@ -8,7 +8,11 @@ $(function () {
       disableOnInteraction: false
     },
     speed: 1800,
-
+        pagination: {
+      el: '.swiper-pagination',
+      type: 'bullets',
+      clickable: true,
+    },
     effect: 'creative',
     creativeEffect: {
       prev: {

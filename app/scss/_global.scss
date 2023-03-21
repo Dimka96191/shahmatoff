@@ -12,6 +12,8 @@ body {
 body {
   font-family: $fontMain;
   font-weight: 400;
+  background-color: $color-bg-dark-500;
+  color: $color-text-primary;
 
   // background: #000;
 
@@ -76,16 +78,16 @@ body {
   font-size: 16px;
   font-weight: 500;
   line-height: 1.1;
-  background-color: rgb(212, 159, 12);
+  background-color: $color-accent;
 
-  color: #fff;
+  color: $color-text-secondary;
   text-align: center;
   border-radius: 0 5px 0 5px;
 
   text-decoration: none;
 
   &:hover {
-    color: darken(#fff, 80%);
+    color: darken($color-text-secondary, 80%);
 
     background-color: lighten(rgb(212, 159, 12), 1%);
     transition: 0.3s;
@@ -135,7 +137,7 @@ body {
   }
 
   a:hover {
-    color: rgb(255, 186, 0);
+    color: $color-accent;
     transition: 0.3s all ease;
     // text-decoration: underline;
   }
@@ -160,5 +162,5 @@ body {
   // padding: 25px 25px 25px;
   font-weight: 800;
   line-height: 1.4;
-  color: #333333;
+  color: $color-text-primary;
 }

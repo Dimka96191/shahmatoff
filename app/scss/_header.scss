@@ -1,5 +1,5 @@
 .header {
-    background: #202328;
+    background: $color-bg-dark-300;
 
     @media (min-width: $breakpoint992) {
         position: fixed;
@@ -30,7 +30,7 @@
     z-index: 21;
 
     &__link {
-        color: rgb(255, 186, 0);
+        color: $color-accent;
         font-family: "Roboto", sans-serif;
         font-size: 24px;
     }
@@ -45,40 +45,27 @@
         position: relative;
         padding: 8px 15px;
         border-radius: 0 5px 0 5px;
+        color: $color-text-primary;
 
-        &:hover {
-            background: rgb(212, 159, 12);
-            transition: 0.2s all;
-        }
-    }
+            &:hover {
+                background: $color-accent;
+                transition: 0.2s all;
+                color: $color-text-secondary;               
+            }
+        }    
+    
 
     &__item-link {
-        color: #fff;
+        color: inherit;
         font-size: 16px;
         line-height: 1.1;
         font-weight: 500;
         display: flex;
         position: relative;
-        transition: 0.5s color;
+        transition: 0.2s color;
 
-        &:after {
-            position: absolute;
-            content: "";
-            left: 0;
-            bottom: -3px;
-            background: #131418;
-            height: 1px;
-            width: 100%;
-            transform: scale(0);
-            transition: 0.5s transform;
-        }
-
-        &hover {
-            color: #131418;
-
-            &::after {
-                transform: scale(1);
-            }
+        &:hover {
+            color: inherit;
         }
 
         @media (max-width: $breakpoint992) {
@@ -103,7 +90,7 @@
                 right: 10px;
                 height: 2px;
                 width: 10px;
-                background: #fff;
+                background: $color-text-primary;
                 transform: rotate(-45deg);
             }
 
@@ -114,7 +101,7 @@
                 right: 16px;
                 height: 2px;
                 width: 10px;
-                background: #fff;
+                background: $color-text-primary;
                 transform: rotate(45deg);
             }
 
@@ -122,6 +109,7 @@
                 .dropdown-list__items {
                     display: block;
                 }
+                
             }
         }
 
@@ -132,7 +120,7 @@
             left: 0px;
             transform: translateY(100%);
             position: absolute;
-            background: #3c3f46;
+            background: $color-bg-dark-300;
             width: 210px;
             padding: 25px 15px;
             border-radius: 0 0 10px 10px;
@@ -148,10 +136,10 @@
         }
 
         &__link {
-            color: #fff;
+            color: $color-text-primary;
 
             &:hover {
-                color: rgb(255, 186, 0);
+                color: $color-accent;
                 text-decoration: underline;
                 transition: 0.2s all;
             }
@@ -175,12 +163,13 @@
         font-size: 26px;
         line-height: 1.6;
         font-weight: 300;
-        color: #fff;
+        color: $color-text-primary;
     }
     &__item-btn {
     }
 
     //Mobile menu styles
+
     @media screen and (max-width: $burgerBreakpoint) {
         position: fixed;
         background: #133;
@@ -205,6 +194,8 @@
         }
     }
 }
+
+
 
 //Burger style
 .burger {

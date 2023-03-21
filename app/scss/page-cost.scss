@@ -11,6 +11,7 @@
         }
     }
     &__title {
+       
     }
     &__content {
     }
@@ -29,7 +30,7 @@
     &__table--active {
         .page-cost__table-content {
             // display: block;
-            
+
             transition: 0.3s all ease-in-out;
         }
 
@@ -56,7 +57,7 @@
     &__table-title {
         font-size: 18px;
         line-height: 1.2;
-        font-weight: 600;
+        font-weight: 500;
         margin-right: 40px;
 
         &::after {
