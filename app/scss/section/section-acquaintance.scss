@@ -4,7 +4,7 @@
     &__wrapper {
         background: $color-bg-dark-300;
         border-radius: 15px;
-        padding: 40px;
+        padding: 40px 40px 20px;
         // display: flex;
         // flex-direction: column;
         // align-items: center;
@@ -113,6 +113,22 @@
             top: 0;
             left: 0;
             font-weight: 500;
+        }
+    }
+
+    &__text {
+        margin-top: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: rgba($color-text-primary, 0.7);
+
+        a {
+            color: inherit;
+            text-decoration: underline;
+            &:hover {
+                color: rgba($color-text-primary, 1);
+            }
         }
     }
 }

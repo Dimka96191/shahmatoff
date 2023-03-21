@@ -1,5 +1,5 @@
 .section-welcome {
-    padding: 50px 0 40px;
+    padding: 50px 0 60px;
     // background-color: #2d3038;
 
     &__wrapper {
@@ -10,7 +10,7 @@
         }
     }
     &__title {
-        padding: 25px 25px 25px;
+        padding: 25px 25px 20px;
        color: $color-text-primary;
         text-align: center;
         font-size: 34px;
@@ -24,7 +24,7 @@
         }
     }
     &__content {
-        margin-top: 30px;
+        margin-top: 10px;
         overflow: hidden;
         box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
         max-height: 675px;
