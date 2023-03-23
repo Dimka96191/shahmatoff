@@ -1,8 +1,7 @@
 .footer {
     background-color: $color-bg-dark-300;
     padding-top: 40px;
-    padding-bottom: 40px;
-    
+    padding-bottom: 20px;
 
     @media (max-width: $breakpoint992) {
         padding-top: 25px;
@@ -107,9 +106,32 @@
             color: $color-accent;
         }
     }
+
+    &__bottom {
+        padding-top: 15px;
+        // border-top: 1px solid #fff;
+    }
+    &__bottom-items {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        gap: 5px;
+    }
+    &__bottom-item {
+        font-size: 14px;
+        a {
+            color: $color-text-primary;
+            text-decoration: underline;
+            font-weight: 400;
+
+            &:hover {
+                color: $color-accent;
+            }
+        }
+    }
 }
-.container {
-}
+
 .footer-logo {
     margin-bottom: 40px;
 
