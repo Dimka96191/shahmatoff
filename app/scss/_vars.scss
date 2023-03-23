@@ -14,7 +14,13 @@ $breakpoint480: 479.98 + px;
 // Colors
 
 $color-primary: #000;
-$color-accent: #f88500;
+$color-accent: #ffba00;
+$color-withe: #fff;
+$color-bg-dark-500: #000;
+$color-bg-dark-300: #212121;
+
+$color-text-primary: #a1a1a1;
+$color-text-secondary: #212121;
 // $color-secondary: #000;
 // $color-success: #000;
 // $color-info: #000;
@@ -33,6 +39,7 @@ $burgerActiveColor: #fefefe;
 
 // Fonts
 
-$fontMain: "Raleway", sans-serif;
+// $fontMain: "Raleway", sans-serif;
+$fontMain: "Roboto", sans-serif;
 
 // $fontSecondary: "";

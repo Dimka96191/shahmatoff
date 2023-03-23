@@ -76,12 +76,12 @@
                 <li class="menu__item">
                   <a href="./contacts.html" class="menu__item-link">Контакты</a>
                 </li>
-                <div class="menu__item-contacts">
+                <li class="menu__item-contacts">
                   <a href="tel:+73432712011" class="menu__item-tell">
                     +7 (343) 271-20-11
                   </a>
                   <a href="./zakazat-zvonok.html" class="menu__item-btn btn">Оформить заявку сейчас</a>
-                </div>
+                </li>
               </ul>
 
             </nav>
@@ -95,6 +95,24 @@
     </header>
 
     <main class="main">
+      <div class="header-banner">
+        <div class="container">
+          <div class="header-banner__items">
+            <div class="header-banner__item">
+              <h1 class="header-banner__title">ШахМатOff</h1>
+              <p class="header-banner__subtitle">
+                БОЛЬШЕ, ЧЕМ ПРОСТО ШАХМАТНАЯ ШКОЛА
+              </p>
+            </div>
+            <div class="header-banner__item">
+              <a href="tel:+73432712011" class="header-banner__content-tell">
+                +7 (343) 271-20-11
+              </a>
+              <a href="./zakazat-zvonok.html" class="btn">Оформить заявку сейчас</a>
+            </div>
+          </div>
+        </div>
+      </div>
 
       <div class="sub-head">
         <div class="container">
@@ -108,83 +126,11 @@
                 <div class="swiper-slide">
                   <img src="./images/slider/slide1.jpg" alt="ШахМатOff">
                 </div>
+
               </div>
             </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="page-trust">
-        <div class="container">
-          <div class="page-trust__content">
-            <div class="page-trust__content-items">
-              <div class="page-trust__content-item">
-                <h2 class="page-trust__title">Наши достоинства</h2>
-                <div class="page-trust__list">
-                  <ul class="page-trust__list-items">
-                    <li class="page-trust__list-item">
-                      <p class="page-trust__list-text">
-                        К каждому ученику мы находим свой индивидуальный
-                        подход;
-                      </p>
-                    </li>
-                    <li class="page-trust__list-item">
-                      <p class="page-trust__list-text">
-                        У нас работают лучшие тренеры Урала;
-                      </p>
-                    </li>
-                    <li class="page-trust__list-item">
-                      <p class="page-trust__list-text">
-                        У нас <span>2</span> филиала по городу;
-                      </p>
-                    </li>
-                  </ul>
-                  <ul class="page-trust__list-items">
-                    <li class="page-trust__list-item">
-                      <p class="page-trust__list-text">
-                        Вы можете выбрать подходящую форму занятий;
-                      </p>
-                    </li>
-                    <li class="page-trust__list-item">
-                      <p class="page-trust__list-text">
-                        Мы гарантируем результат;
-                      </p>
-                    </li>
-                    <li class="page-trust__list-item">
-                      <p class="page-trust__list-text">
-                        Работаем при поддержке Федерации Шахмат Свердловской
-                        Области.
-                      </p>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              <div class="page-trust__content-right">
-                <div class="page-trust__content-text">
-                  <p>Позвоните нам или оставьте заявку с сайта.</p>
-                  <p>Мы перезвоним вам в течение 10 минут.</p>
-                </div>
-                <a href="tel:+73432712011" class="page-trust__content-tell">
-                  +7 (343) 271-20-11
-                </a>
-                <a href="./zakazat-zvonok.html" class="btn">Оформить заявку сейчас</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="section-welcome">
-        <div class="container">
-          <div class="section-welcome__wrapper">
-            <h2 class="section-welcome__title section-title">
-              ШахМатOff приглашает на занятия
-            </h2>
-            <div class="section-welcome__content">
-              <iframe src="https://www.youtube-nocookie.com/embed/nck33lBOvTk" title="YouTube video player"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowfullscreen>
-              </iframe>
+            <div class="swiper-pagination__wrapper">
+              <div class="swiper-pagination"></div>
             </div>
           </div>
         </div>
@@ -206,6 +152,129 @@
               </h3>
               <img src="./images/avia.webp" alt="Авиационная" class="section-work__item-img">
             </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="section-welcome">
+        <div class="container">
+          <div class="section-welcome__wrapper">
+            <h2 class="section-welcome__title section-title">
+              ШахМатOff приглашает на занятия
+            </h2>
+            <div class="section-welcome__content">
+
+              <!-- <iframe src="https://www.youtube.com/embed/nck33lBOvTk" title="YouTube video player"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe> -->
+
+              <video class="section-welcome__content-video" src="./video/wellcome2.mp4" controls
+                poster="./images/shahmatoff.png"></video>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="section-acquaintance">
+        <div class="container">
+          <div class="section-acquaintance__wrapper">
+            <h3 class="section-title section-acquaintance__title">
+              Познакомьтесь со школой бесплатно
+            </h3>
+            <div class="section-acquaintance__content">
+              <form action="#" class="section-acquaintance__form" id="acquaintanceForm">
+                <p class="section-acquaintance__subtitle">
+                  Ответим на вопросы и расскажем о себе
+                </p>
+                <div class="section-acquaintance__items">
+                  <div class="section-acquaintance__item">
+                    <input id="acquaintanceFormName" class="section-acquaintance__input _req" type="text" name="name"
+                      placeholder="Имя">
+                  </div>
+                  <div class="section-acquaintance__item">
+                    <input id="acquaintanceFormTel" class="section-acquaintance__input _req" type="tel" name="name"
+                      placeholder="+7(___)___-__-__" autocomplete="tel">
+                  </div>
+                </div>
+                <div class="section-acquaintance__item">
+                  <input id="acquaintanceFormName" class="section-acquaintance__input _req" type="email" name="name"
+                    placeholder="your@email.com" autocomplete="email">
+                </div>
+
+                <button type="submit" class="section-acquaintance__button btn">Оставить заявку</button>
+              </form>
+              <div class="section-acquaintance__content-item">
+                <p class="section-acquaintance__content-title">
+                  После заявки
+                </p>
+                <ul class="section-acquaintance__list">
+                  <li class="section-acquaintance__list-item">
+                    Раскажем о нас и дадим рекомендации на бесплатном вводном уроке
+                  </li>
+                  <li class="section-acquaintance__list-item">
+                    Подберём тренера под ваши цели
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="section-acquaintance__text">
+              <p>
+                Оставляя заявку, вы принимаете
+                <a href="#">условия политики конфиденциальности</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="section-advantages">
+        <div class="container">
+          <div class="section-advantages__wrapper">
+            <h3 class="section-advantages__title section-title">
+              Наши преимущества
+            </h3>
+            <div class="section-advantages__content">
+              <div class="section-advantages__items">
+                <div class="section-advantages__item">
+                  <div class="section-advantages__item-img">
+                    <img src="./images/best_teacher.svg" alt="">
+                  </div>
+                  <p>Лучшие тренеры Урала</p>
+                </div>
+                <div class="section-advantages__item">
+                  <div class="section-advantages__item-img">
+                    <img src="./images/location.svg" alt="">
+                  </div>
+                  <p>Филиалы по городу</p>
+                </div>
+                <div class="section-advantages__item">
+                  <div class="section-advantages__item-img">
+                    <img src="./images/cup.svg" alt="">
+                  </div>
+                  <p>Гарантия результата</p>
+                </div>
+              </div>
+              <div class="section-advantages__items">
+                <div class="section-advantages__item">
+                  <div class="section-advantages__item-img">
+                    <img src="./images/professional.svg" alt="">
+                  </div>
+                  <p>Форма обучения на выбор</p>
+                </div>
+                <div class="section-advantages__item">
+                  <div class="section-advantages__item-img">
+                    <img src="./images/worker.svg" alt="">
+                  </div>
+                  <p>Индивидуальный подход</p>
+                </div>
+                <div class="section-advantages__item">
+                  <div class="section-advantages__item-img">
+                    <img src="./images/like.svg" alt="">
+                  </div>
+                  <p>Доступная цена</p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>

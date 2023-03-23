@@ -12,6 +12,9 @@ body {
 body {
   font-family: $fontMain;
   font-weight: 400;
+  background-color: $color-bg-dark-500;
+  color: $color-text-primary;
+
   // background: #000;
 
   &.locked {
@@ -70,23 +73,23 @@ body {
 .btn {
   padding: 14px 30px;
   border: transparent;
- 
 
   // margin-left: auto;
   font-size: 16px;
-  font-weight: 800;
+  font-weight: 500;
   line-height: 1.1;
-  background-color: rgb(212, 159, 12);
-  color: #fff;
+  background-color: $color-accent;
+
+  color: $color-text-secondary;
   text-align: center;
   border-radius: 0 5px 0 5px;
 
   text-decoration: none;
 
   &:hover {
-    color: darken(#fff, 80%);
-    //  color: lighten(#fff, 15%);
-    background-color: lighten(rgb(212, 159, 12), 5%);
+    color: darken($color-text-secondary, 80%);
+
+    background-color: lighten(rgb(212, 159, 12), 1%);
     transition: 0.3s;
   }
 }
@@ -95,6 +98,10 @@ body {
 
 .bread-crumb {
   margin-top: 25px;
+
+  @media (min-width: $breakpoint992) {
+    padding-top: 100px;
+  }
   &__list {
     display: flex;
     align-items: center;
@@ -130,7 +137,7 @@ body {
   }
 
   a:hover {
-    color: rgb(255, 186, 0);
+    color: $color-accent;
     transition: 0.3s all ease;
     // text-decoration: underline;
   }
@@ -140,7 +147,6 @@ body {
   font-size: 32px;
   line-height: 1.2;
   font-weight: 600;
-    
 
   @media (max-width: $breakpoint768) {
     font-size: 24px;
@@ -153,8 +159,8 @@ body {
 
 .section-title {
   font-size: 30px;
-  padding: 25px 25px 25px;
+  // padding: 25px 25px 25px;
   font-weight: 800;
   line-height: 1.4;
-  color: #333333;
+  color: $color-text-primary;
 }

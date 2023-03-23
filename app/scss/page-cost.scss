@@ -1,4 +1,7 @@
 .page-cost {
+    @media (min-width: $breakpoint992) {
+        padding-top: 75px;
+    }
     &__wrapper {
         padding: 25px 0 10px;
 
@@ -8,6 +11,7 @@
         }
     }
     &__title {
+       
     }
     &__content {
     }
@@ -25,8 +29,9 @@
 
     &__table--active {
         .page-cost__table-content {
-            display: block;
-            transition: 1s all ease-in-out;
+            // display: block;
+
+            transition: 0.3s all ease-in-out;
         }
 
         .page-cost__table-title {
@@ -52,7 +57,7 @@
     &__table-title {
         font-size: 18px;
         line-height: 1.2;
-        font-weight: 600;
+        font-weight: 500;
         margin-right: 40px;
 
         &::after {
@@ -85,9 +90,12 @@
     }
 
     &__table-content {
-        display: none;
-        padding: 0 10px 10px 10px;
+        // display: none;
+        max-height: 0;
+        padding: 0 10px 0 10px;
+        // margin-bottom: 10px;
         background: #f9f9f9;
+        transition: 0.3s all ease;
     }
     &__table-row {
         display: flex;

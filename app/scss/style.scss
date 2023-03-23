@@ -18,12 +18,15 @@
 @import "page-post.scss";
 @import "page-cost.scss";
 
+@import "./section/header-banner.scss";
 @import "./section/section-trust";
 @import "./section/section-welcome";
 @import "./section/section-work";
 @import "./section/section-blog";
+@import "./section/section-acquaintance.scss";
+@import "./section/section-advantages.scss";
 
-
+@import "./color.scss";
 
 @import "./slider";
 // @import "./section/paralax";
@@ -31,6 +34,6 @@
 // @import "footer.scss";
 
 //libs
-@import "_libs";
+// @import "_libs";
 @import "../../node_modules/swiper/swiper-bundle";
 @import "../../node_modules/slick-slider/slick/slick.scss";

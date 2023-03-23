@@ -20,8 +20,11 @@
     &__content-item {
     }
     &__title {
+        text-decoration: none;
+        color: $color-accent;
+        font-family: "Roboto";
+        font-size: 30px;
         font-weight: 900;
-        font-size: 18px;
 
         line-height: calc(21 / 18);
         position: relative;
@@ -40,17 +43,29 @@
             background-color: #2d3038;
         }
     }
-    &__list {
-        display: flex;
 
-        margin-top: 16px;
-        justify-content: space-between;
-        align-items: center;
+    &__subtitle {
+        padding: 5px 0 0;
+        text-transform: uppercase;
+        font-family: "Roboto";
+        font-size: 18px;
+        color: rgb(161, 161, 161);
+        font-weight: 300;
 
         @media (max-width: $breakpoint992) {
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
+            text-align: center;
+        }
+    }
+
+    &__list {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+        margin-top: 16px;
+
+        @media (max-width: $breakpoint992) {
+            display: block;
+            text-align: center;
         }
     }
     &__list-items {
@@ -77,8 +92,9 @@
 
         .btn {
             margin-left: auto;
+            
         }
-        
+
         @media (max-width: $breakpoint992) {
             margin-top: 30px;
             flex: 0 0 100%;

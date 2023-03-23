@@ -1,8 +1,6 @@
 .page-coaches {
-
-
     padding: 50px 0;
-
+    
     &__title {
     }
     &__items {
@@ -80,10 +78,8 @@
 
 // USER PAGE
 
-
 .coaches-user {
     padding: 40px 0;
-
 
     &__top {
         display: flex;
@@ -136,7 +132,7 @@
             width: 5px;
             height: 5px;
             border-radius: 100%;
-            background: rgb(255, 186, 0);
+            background: $color-accent;
             top: 50%;
             left: -10px;
             transform: translate(-50%, -50%);
@@ -146,8 +142,8 @@
     &__img-items {
         margin: 30px 0;
         padding: 30px 0;
-        // border-top: 1px solid rgb(255, 186, 0);
-        
+        // border-top: 1px solid $color-accent;
+
         display: flex;
         flex-wrap: wrap;
         gap: 20px;
@@ -188,7 +184,7 @@
         margin-right: 3px;
 
         &:hover {
-            color: rgb(255, 186, 0);
+            color: $color-accent;
         }
     }
     &__text {

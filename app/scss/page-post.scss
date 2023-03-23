@@ -3,6 +3,9 @@
         background: #fafafa;
     }
 
+    @media (min-width: $breakpoint992) {
+        padding-top: 75px;
+    }
     &__wrapper {
         background: #fff;
         padding: 25px 0 10px;

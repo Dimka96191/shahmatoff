@@ -1,9 +1,50 @@
 .sub-head {
     // padding-bottom: 50px;
-    background: #2d3038;
-    padding: 20px 0 20px;
+
+    // background: #2d3038;
+    position: relative;
+    // z-index: -1;
+    // padding: 30px 0 30px;
+    padding: 15px 0 15px;
+
     &__slider {
         max-width: 100%;
+        // size: unset;
+    }
+
+    .swiper-pagination__wrapper {
+        position: relative;
+
+        display: inline-block;
+        min-width: 100px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 1;
+        top: 0;
+    }
+    .swiper-pagination {
+        border-radius: 6px;
+        position: absolute;
+        
+        background: rgba($color-bg-dark-500, 0.9);
+        padding: 6px 10px;
+    }
+    .swiper-pagination-bullet {
+        width: 8px;
+        height: 8px;
+        line-height: 8px;
+        font-size: 8px;
+        background: $color-accent;
+        opacity: 0.5;
+    }
+
+    .swiper-pagination-bullet-active {
+        width: 13px;
+        height: 13px;
+        line-height: 13px;
+        font-size: 13px;
+        background: $color-accent;
+        opacity: 1;
     }
 }
 .swiper {
@@ -11,8 +52,6 @@
 .swiper-wrapper {
 }
 .swiper-slide {
-    
-    
     img {
         object-fit: cover;
         width: 100%;
