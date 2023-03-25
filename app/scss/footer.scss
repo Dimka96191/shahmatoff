@@ -8,6 +8,13 @@
         padding-bottom: 25px;
     }
 
+    &__top {
+        padding: 20px 0 30px;
+    }
+    &__map {
+        height: 250px;
+    }
+
     &__items {
         display: flex;
         justify-content: space-between;

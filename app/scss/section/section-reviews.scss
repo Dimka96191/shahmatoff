@@ -3,7 +3,7 @@
     &__wrapper {
         padding: 40px 20px 30px;
         border: 1px solid rgba($color-bg-dark-300, 1);
-        border-radius: 25px;
+        border-radius: 15px;
 
        
 
@@ -24,9 +24,9 @@
 
     &__item-inner {
         background: rgba($color-bg-dark-300, 0.8);
-        border-radius: 25px;
+        border-radius: 15px;
         padding: 30px 40px;
-        cursor: pointer;
+        // cursor: pointer;
     }
     &__item-text {
         p {
