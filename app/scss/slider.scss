@@ -25,7 +25,7 @@
     .swiper-pagination {
         border-radius: 6px;
         position: absolute;
-        
+
         background: rgba($color-bg-dark-500, 0.9);
         padding: 6px 10px;
     }
@@ -51,6 +51,7 @@
 }
 .swiper-wrapper {
 }
+
 .swiper-slide {
     img {
         object-fit: cover;
@@ -68,5 +69,42 @@
         @media (max-width: $breakpoint480) {
             height: 250px;
         }
+    }
+}
+
+/* Ограничивающая оболочка */
+.slick-list {
+    overflow: hidden;
+}
+/* Лента слайдов */
+.slick-track {
+    display: flex;
+    align-items: flex-start;
+}
+
+.slick-dots {
+    display: flex;
+    justify-content: center;
+    margin-top: 45px;
+    gap: 10px;
+
+    li {
+        display: flex;
+        align-items: center;
+    }
+    li.slick-active {
+        button {
+            background-color: #f88500;
+        }
+    }
+
+    button {
+        cursor: pointer;
+        border: transparent;
+        height: 5px;
+        width: 25px;
+        background-color: #e4e6e8;
+        border-radius: 0 5px;
+        font-size: 0;
     }
 }

@@ -4,6 +4,12 @@
 @import "_reset";
 @import "_global";
 
+//libs
+// @import "_libs";
+@import "../../node_modules/swiper/swiper-bundle";
+@import "../../node_modules/slick-slider/slick/slick.scss";
+
+
 // Sections or Page SCSS-files import
 @import "header";
 @import "footer";
@@ -26,6 +32,9 @@
 @import "./section/section-blog";
 @import "./section/section-acquaintance.scss";
 @import "./section/section-advantages.scss";
+@import "./section/section-learn.scss";
+@import "./section/section-galary.scss";
+@import "./section/section-reviews.scss";
 
 
 
@@ -34,7 +43,4 @@
 
 // @import "footer.scss";
 
-//libs
-// @import "_libs";
-@import "../../node_modules/swiper/swiper-bundle";
-@import "../../node_modules/slick-slider/slick/slick.scss";
+

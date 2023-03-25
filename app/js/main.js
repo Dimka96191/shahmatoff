@@ -8,7 +8,7 @@ $(function () {
       disableOnInteraction: false
     },
     speed: 1800,
-        pagination: {
+    pagination: {
       el: '.swiper-pagination',
       type: 'bullets',
       clickable: true,
@@ -35,6 +35,7 @@ $(function () {
     speed: 800,
     slidesToShow: 3,
     slidesToScroll: 3,
+
     // centerMode: true,
     // variableWidth: true,
     responsive: [
@@ -54,12 +55,33 @@ $(function () {
         },
       },
     ],
-
   });
 
 
+  $('.slider-carousel--double').slick({
+    dots: true,
+
+    infinite: false,
+    arrows: false,
+    speed: 800,
+    slidesToShow: 2,
+    slidesToScroll: 1,
+    adaptiveHight: true,
+
+    responsive: [
+      {
+        breakpoint: 992,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      }],
+  });
 
 })
+
+
+
 
 // Мобильное меню бургер
 function burgerMenu() {

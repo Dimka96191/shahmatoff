@@ -1,0 +1,41 @@
+.section-reviews {
+    padding: 40px 0px 80px;
+    &__wrapper {
+        padding: 40px 20px 30px;
+        border: 1px solid rgba($color-bg-dark-300, 1);
+        border-radius: 25px;
+
+       
+
+        @media (max-width: $breakpoint576) {
+            padding: 40px 0px 30px;
+        }
+    }
+    &__title {
+        text-align: center;
+    }
+    &__items {
+        margin-top: 30px;
+    }
+    &__item {
+        width: 100%;
+        padding: 0 20px;
+    }
+
+    &__item-inner {
+        background: rgba($color-bg-dark-300, 0.8);
+        border-radius: 25px;
+        padding: 30px 40px;
+        cursor: pointer;
+    }
+    &__item-text {
+        p {
+            font-size: 14px;
+            line-height: 1.2;
+        }
+    }
+    &__item-author {
+        padding-top: 20px;
+        font-size: 16px;
+    }
+}
