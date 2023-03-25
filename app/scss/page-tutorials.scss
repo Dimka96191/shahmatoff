@@ -18,12 +18,12 @@
         font-weight: 400;
         font-size: 16px;
         line-height: 1.7;
-        color: #000000;
+        color: $color-text-primary;
 
         &:hover {
             transition: 0.3s all ease;
 
-            color: #f88500;
+            color: $color-accent;
         }
 
         @media (max-width: $breakpoint768) {
@@ -52,7 +52,7 @@
             font-size: 12px;
         }
         a {
-            color: #f88500;
+            color: $color-accent;
             font-weight: 500;
 
             &:hover {
@@ -70,14 +70,14 @@
     &__link {
         display: block;
         text-decoration: underline;
-        color: #000000;
+        color: $color-text-primary;
 
         @media (max-width: $breakpoint768) {
             font-size: 12px;
         }
 
         &:hover {
-            color: #f88500;
+            color: $color-accent;
             transition: 0.3s all ease;
         }
     }

@@ -1,14 +1,15 @@
 .page {
-    
+   
 
     &__wrapper {
         padding: 50px 0;
         display: flex;
         justify-content: space-between;
         gap: 30px;
+       
 
         @media (min-width: $breakpoint992) {
-            padding: 135px 0 20px;
+            padding: 135px 0 140px;
             min-height: 400px;
             display: grid;
             grid-template-columns: repeat(4, 1fr);
@@ -32,16 +33,16 @@
     }
 
     &__wrapper {
-        background: #fafafa;
+        background: $color-bg-dark-300;
         border-radius: 0px 5px;
-        box-shadow: 0px 5px 10px 6px rgba(202, 204, 206, 0.2);
-        padding: 5px;
+        // box-shadow: 0px 5px 10px 6px rgba(202, 204, 206, 0.2);
+        // padding: 5px;
     }
     &__title {
         font-size: 18px;
         line-height: calc(19 / 18);
         text-transform: uppercase;
-        color: #333333;
+        color: $color-text-primary;
         padding-top: 40px;
         text-align: center;
         padding-top: 15px;
@@ -74,7 +75,7 @@
         }
     }
     &__nav-item--active {
-        background: #f88400;
+        background: rgba($color-withe, 0.5);
 
         a {
             color: #ffffff;
@@ -84,7 +85,7 @@
         font-weight: 500;
         font-size: 16px;
         line-height: 18px;
-        color: #666666;
+        color: $color-text-primary;
 
         @media (max-width: $breakpoint768) {
             font-size: 12px;
@@ -94,9 +95,11 @@
 
 .page-content {
     // flex: 0 1 71%;
+    
     max-width: 850px;
     width: 100%;
-    box-shadow: 0px 5px 10px 6px rgba(202, 204, 206, 0.2);
+    // box-shadow: 0px 5px 10px 6px rgba(202, 204, 206, 0.2);
+    background: $color-bg-dark-300;
     padding: 30px 30px 40px 30px;
 
     @media (min-width: $breakpoint992) {
@@ -117,7 +120,7 @@
     font-weight: 800;
     font-size: 30px;
     line-height: calc(35 / 30);
-    color: #333333;
+    color: $color-text-primary;
 
     @media (max-width: $breakpoint768) {
         font-size: 20px;
@@ -142,7 +145,7 @@
         font-weight: 400;
         font-size: 16px;
         line-height: 1.7;
-        color: #000000;
+        color: $color-text-primary;
 
         p:not(:last-child) {
             margin-bottom: 10px;
@@ -167,7 +170,7 @@
         font-weight: 600;
         font-size: 16px;
         line-height: 1.7;
-        color: #000000;
+        color: $color-text-primary;
 
         @media (max-width: $breakpoint768) {
             font-size: 12px;
@@ -178,7 +181,7 @@
         font-weight: 400;
         font-size: 16px;
         line-height: 1.7;
-        color: #000000;
+        color: $color-text-primary;
         position: relative;
 
         &::after {
@@ -200,11 +203,11 @@
         font-weight: 400;
         font-size: 16px;
         line-height: 1.7;
-        color: #000000;
+        color: $color-text-primary;
         margin-top: 10px;
 
         a {
-            color: #f88500;
+            color: $color-accent;
             font-weight: 500;
             font-size: inherit;
         }
@@ -224,7 +227,7 @@
         font-size: 18px;
         line-height: calc(19 / 18);
         font-weight: 600;
-        color: #333333;
+        color: $color-text-primary;
 
         @media (max-width: $breakpoint768) {
             font-size: 14px;
@@ -255,7 +258,7 @@
         // width: 100%;
         // object-fit: cover;
 
-        box-shadow: 0px 5px 10px 6px rgba(202, 204, 206, 0.2);
+        // box-shadow: 0px 5px 10px 6px rgba(202, 204, 206, 0.2);
 
         @media (max-width: $breakpoint992) {
             width: 70%;
