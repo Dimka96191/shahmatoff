@@ -88,6 +88,14 @@
     margin-top: 45px;
     gap: 10px;
 
+    @media (max-width: $breakpoint480) {
+        flex-wrap: wrap;
+        // padding: 0 10px;
+        width: 100%;
+        gap: 20px 10px;
+        padding: 5px 15px;
+    }
+
     li {
         display: flex;
         align-items: center;
@@ -109,44 +117,7 @@
     }
 }
 
-.slick-dots {
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    bottom: 0;
-    left: 50%;
-    background: $color-bg-dark-500;
-    padding: 0 30px;
-    transform: translate(-50%, 50%);
-    margin-top: 30px;
-
-    @media (max-width: $breakpoint480) {
-        flex-wrap: wrap;
-        padding: 0 10px;
-        width: 100%;
-    }
-}
 
 
-li {
-        display: flex;
-        align-items: center;
-    }
-    li.slick-active {
-        button {
-            background-color: #f88500;
-        }
-    }
-
-    button {
-        cursor: pointer;
-        border: transparent;
-        height: 5px;
-        width: 25px;
-        background-color: #e4e6e8;
-        border-radius: 0 5px;
-        font-size: 0;
-    }
 
     

@@ -66,7 +66,7 @@ $(function () {
     speed: 800,
     slidesToShow: 2,
     slidesToScroll: 1,
-    
+
     adaptiveHeight: true,
 
     responsive: [
@@ -193,4 +193,17 @@ function init() {
     }),
     );
 
+}
+
+
+// COOKIE
+getCookie()
+
+function getCookie() {
+  let btnCookie = document.querySelector('.cookie__btn')
+  let elementCookie = document.querySelector('.cookie')
+
+  btnCookie = addEventListener('click', () => {
+    elementCookie.classList.add('cookie--hiden')
+  })
 }

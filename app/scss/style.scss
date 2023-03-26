@@ -9,7 +9,6 @@
 @import "../../node_modules/swiper/swiper-bundle";
 @import "../../node_modules/slick-slider/slick/slick.scss";
 
-
 // Sections or Page SCSS-files import
 @import "header";
 @import "footer";
@@ -36,11 +35,8 @@
 @import "./section/section-galary.scss";
 @import "./section/section-reviews.scss";
 
-
-
+@import "./section/cookie.scss";
 @import "./slider";
 // @import "./section/paralax";
 
 // @import "footer.scss";
-
-
