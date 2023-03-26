@@ -1,11 +1,18 @@
 .footer {
-    background-color: #202328;
+    background-color: $color-bg-dark-300;
     padding-top: 40px;
-    padding-bottom: 40px;
+    padding-bottom: 20px;
 
     @media (max-width: $breakpoint992) {
         padding-top: 25px;
         padding-bottom: 25px;
+    }
+
+    &__top {
+        padding: 20px 0 30px;
+    }
+    &__map {
+        height: 250px;
     }
 
     &__items {
@@ -74,7 +81,7 @@
             border: transparent;
             height: 3px;
             width: 25px;
-            background-color: rgb(255, 186, 0);
+            background-color: $color-accent;
             border-radius: 0 3px;
             position: absolute;
             left: 0;
@@ -103,12 +110,35 @@
         &:hover {
             transition: 0.3s;
             text-decoration: underline;
-            color: rgb(255, 186, 0);
+            color: $color-accent;
+        }
+    }
+
+    &__bottom {
+        padding-top: 15px;
+        // border-top: 1px solid #fff;
+    }
+    &__bottom-items {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        gap: 5px;
+    }
+    &__bottom-item {
+        font-size: 14px;
+        a {
+            color: $color-text-primary;
+            text-decoration: underline;
+            font-weight: 400;
+
+            &:hover {
+                color: $color-accent;
+            }
         }
     }
 }
-.container {
-}
+
 .footer-logo {
     margin-bottom: 40px;
 
@@ -140,9 +170,9 @@
         &:hover {
             transition: 0.3s;
             path {
-                fill: rgb(255, 186, 0);
+                fill: $color-accent;
             }
-            border-color: rgb(255, 186, 0);
+            border-color: $color-accent;
         }
     }
     &__img {

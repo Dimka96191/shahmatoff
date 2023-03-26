@@ -1,21 +1,23 @@
 .page-blog {
     // padding: 0 0 40px;
-
+    @media (min-width: $breakpoint992) {
+        padding: 135px 0 80px;
+    }
     .container {
         display: flex;
     }
 
     @media (min-width: $breakpoint480) {
-        background: #fafafa;
+        // background: #fafafa;
     }
 
     &__wrapper {
-        background: #fff;
+        background: $color-bg-dark-300;
         padding: 25px 0 10px;
 
         @media (min-width: $breakpoint480) {
             padding: 60px 30px 20px;
-            box-shadow: 0px 5px 10px 6px rgba(202, 204, 206, 0.2);
+            // box-shadow: 0px 5px 10px 6px rgba(202, 204, 206, 0.2);
         }
     }
     &__top {
@@ -42,7 +44,7 @@
         border-radius: 10px;
         transition: 0.5s all ease;
         &:hover {
-            box-shadow: 0px 5px 10px 6px #9191914b;
+            box-shadow: 0px 5px 10px 6px rgba($color-bg-dark-500, 0.4);
             border-color: transparent;
             transition: 0.5s all ease;
         }
@@ -108,8 +110,8 @@
         }
     }
     &__item-date {
-        background: #f88500;
-        color: #fff;
+        background: $color-accent;
+       color: $color-text-secondary;
         padding: 5px 10px;
         border-radius: 0 5px;
         font-size: 15px;
@@ -126,14 +128,15 @@
         font-weight: 800;
         font-size: 15px;
         line-height: 1.2;
+        color: $color-text-primary;
 
         text-decoration-line: underline;
 
-        color: #333333;
+        
 
         &:hover {
             transition: 0.3s all ease;
-            color: #f88500;
+           color: $color-accent;
             text-decoration: none;
         }
 
@@ -144,7 +147,9 @@
 
     &__btn {
         margin: 50px auto 20px;
+        display: block;
         cursor: pointer;
+        color: $color-text-secondary;
 
         @media (max-width: $breakpoint480) {
             width: 100%;

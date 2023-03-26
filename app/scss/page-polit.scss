@@ -1,0 +1,24 @@
+.polit {
+    padding: 60px 0 80px;
+    &__title {
+        margin-bottom: 30px;
+    }
+    .section-subtitle {
+        margin: 10px 0;
+        font-weight: 500;
+        font-size: 18px;
+    }
+
+    p {
+        margin: 5px 0;
+        line-height: 1.2;
+    }
+
+    a {
+        color: $color-accent;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}

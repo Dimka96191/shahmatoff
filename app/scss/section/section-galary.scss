@@ -1,0 +1,57 @@
+.section-galary {
+    padding: 50px 0 60px;
+    // background: $color-bg-dark-300;
+
+    @media (max-width: $breakpoint576) {
+        padding: 20px 0 30px;
+    }
+    &__title {
+        text-align: center;
+        margin-bottom: 40px;
+        @media (max-width: $breakpoint576) {
+            margin-bottom: 20px;
+        }
+    }
+    &__content {
+        position: relative;
+
+        .slick-dots {
+            position: absolute;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            bottom: 0;
+            left: 50%;
+            background: $color-bg-dark-500;
+            padding: 0 30px;
+            transform: translate(-50%, 50%);
+            // margin-top: 30px;
+        }
+    }
+    &__items {
+        padding: 20px;
+        border-radius: 15px;
+        border: 1px solid rgba($color-accent, 0.4);
+
+        @media (max-width: $breakpoint576) {
+            padding: 10px;
+            border: transparent;
+        }
+    }
+    &__item {
+        padding: 10px;
+        overflow: hidden;
+
+        @media (min-width: $breakpoint1200) {
+            img {
+                height: 280px;
+                width: 100%;
+                object-fit: cover;
+            }
+        }
+
+        @media (max-width: $breakpoint576) {
+            padding: 0px;
+        }
+    }
+}

@@ -1,6 +1,14 @@
 .page-contacts {
     padding: 50px 0;
+    
+    
+
+
+    @media (min-width: $breakpoint992) {
+        padding-top: 125px;
+      }
     &__content {
+        // background: $color-bg-dark-300;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -9,6 +17,7 @@
         color: #202328;
     }
     &__title {
+        color: $color-text-primary;
     }
     &__content-item {
         margin-top: 15px;
@@ -17,6 +26,7 @@
         margin: 5px 0;
         font-size: 18px;
         line-height: 1.2;
+        color: $color-text-primary;
     }
     &__content-tell {
         font-weight: 700;
@@ -24,7 +34,8 @@
         font-size: 28px;
         line-height: calc(38 / 28);
         font-weight: 300;
-        color: inherit;
+        
+        color: $color-text-primary;
 
         &:hover {
             // color: lighten(#d7e0f0, 0.5);

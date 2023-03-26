@@ -1,22 +1,30 @@
 .page-cost {
+    padding: 20px 0px 40px ;
+    @media (min-width: $breakpoint992) {
+        padding-top: 135px;
+        // background: $color-bg-dark-300;
+    }
     &__wrapper {
-        padding: 25px 0 10px;
-
+        padding: 25px 15px 60px;
+        background: $color-bg-dark-300;
+        
         @media (min-width: $breakpoint768) {
-            padding: 60px 30px 60px;
-            box-shadow: 0px 5px 10px 6px rgba(202, 204, 206, 0.2);
+            padding: 40px 30px 60px;
+            background: $color-bg-dark-300;
+            // box-shadow: 0px 5px 10px 6px rgba(202, 204, 206, 0.2);
         }
     }
     &__title {
     }
     &__content {
+       
     }
     &__table {
         margin-top: 20px;
-        box-shadow: 0px 5px 10px 6px rgba(202, 204, 206, 0.2);
+        // box-shadow: 0px 5px 10px 6px rgba(202, 204, 206, 0.2);
         border-radius: 0 10px 0 10px;
         overflow: hidden;
-        border: 1px solid #e7e6e6;
+        // border: 1px solid #e7e6e6;
 
         &:first-child {
             margin-top: 40px;
@@ -25,8 +33,9 @@
 
     &__table--active {
         .page-cost__table-content {
-            display: block;
-            transition: 1s all ease-in-out;
+            // display: block;
+
+            transition: 0.3s all ease-in-out;
         }
 
         .page-cost__table-title {
@@ -42,7 +51,7 @@
     }
 
     &__table-top {
-        background: #e7e6e6;
+        background: rgba($color-withe, 0.5);
         padding: 20px 10px 20px 10px;
 
         cursor: pointer;
@@ -52,15 +61,16 @@
     &__table-title {
         font-size: 18px;
         line-height: 1.2;
-        font-weight: 600;
+        font-weight: 500;
         margin-right: 40px;
+        color: $color-text-secondary;
 
         &::after {
             position: absolute;
             content: "";
             height: 2px;
             width: 12px;
-            background: #333;
+            background: $color-bg-dark-500;
             top: 50%;
             right: 20px;
             transform: rotate(-45deg);
@@ -72,7 +82,7 @@
             content: "";
             height: 2px;
             width: 12px;
-            background: #333;
+            background: $color-bg-dark-500;
             top: 50%;
             right: 28px;
             transform: rotate(45deg);
@@ -85,14 +95,17 @@
     }
 
     &__table-content {
-        display: none;
-        padding: 0 10px 10px 10px;
-        background: #f9f9f9;
+        // display: none;
+        max-height: 0;
+        padding: 0 10px 0 10px;
+        // margin-bottom: 10px;
+        background: rgba($color-bg-dark-500, 0.3);
+        transition: 0.3s all ease;
     }
     &__table-row {
         display: flex;
         align-items: center;
-        border-top: 1px solid $color-accent;
+        border-top: 1px solid rgba($color-accent, 0.3);
 
         line-height: 1.2;
         font-size: 16px;
@@ -144,7 +157,7 @@
     &__table-item {
         padding: 8px 0 8px 0;
         &:not(:last-child) {
-            border-bottom: 1px solid $color-accent;
+            border-top: 1px solid rgba($color-accent, 0.3);
         }
     }
 }

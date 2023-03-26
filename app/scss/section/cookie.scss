@@ -1,0 +1,39 @@
+.cookie {
+    &--hiden {
+        display: none;
+    }
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    padding: 20px 50px;
+    background: $color-bg-dark-300;
+    color: #fff;
+    font-size: 14px;
+    z-index: 600;
+    max-width: 700px;
+    margin: 0 auto;
+
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        max-width: 700px;
+
+        width: 100%;
+    }
+    &__text {
+        width: 100%;
+    }
+    &__link {
+        color: $color-accent;
+    }
+    &__btn {
+        margin-top: 10px;
+        max-width: 150px;
+        cursor: pointer;
+        padding: 10px 15px;
+    }
+}
