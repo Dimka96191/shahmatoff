@@ -66,7 +66,8 @@ $(function () {
     speed: 800,
     slidesToShow: 2,
     slidesToScroll: 1,
-    adaptiveHight: true,
+    
+    adaptiveHeight: true,
 
     responsive: [
       {
@@ -79,6 +80,7 @@ $(function () {
   });
 
 })
+
 
 
 
