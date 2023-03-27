@@ -6,8 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Тренеры</title>
   <link rel="stylesheet" href="css/style.min.css">
- 
-  
+
+
 </head>
 
 <body>
@@ -94,8 +94,20 @@
           <h2 class="page-title page-coaches__title">
             Тренеры
           </h2>
+
+          <div class="page-coaches__filter">
+            <div class="page-coaches__filter-items">
+              <div class="page-coaches__filter-item page-coaches__filter-item--active" data-id="all">Все</div>
+              <div class="page-coaches__filter-item" data-id="tikhvin">КД "Тихвинъ"</div>
+              <div class="page-coaches__filter-item" data-id="aviation">Авиационная</div>
+
+
+            </div>
+
+          </div>
+
           <div class="page-coaches__items">
-            <a class="page-coaches__item" href="./shcherbin.html">
+            <a class="page-coaches__item tikhvin" href="./shcherbin.html">
               <div class="page-coaches__item-wrapper">
                 <img src="./images/coaches/Shcherbin.webp" alt="" class="page-coaches__item-img">
                 <h3 class="page-coaches__item-name">
@@ -103,7 +115,7 @@
                 </h3>
               </div>
             </a>
-            <a class="page-coaches__item" href="./schariiazdanov.html">
+            <a class="page-coaches__item aviation" href="./schariiazdanov.html">
               <div class="page-coaches__item-wrapper">
                 <img src="./images/coaches/Shariyazdanov.webp" alt="" class="page-coaches__item-img">
                 <h3 class="page-coaches__item-name">
@@ -111,7 +123,7 @@
                 </h3>
               </div>
             </a>
-            <a class="page-coaches__item" href="./lysenko.html">
+            <a class="page-coaches__item aviation" href="./lysenko.html">
               <div class="page-coaches__item-wrapper">
                 <img src="./images/coaches/Lysenko.webp" alt="" class="page-coaches__item-img">
                 <h3 class="page-coaches__item-name">
@@ -119,7 +131,7 @@
                 </h3>
               </div>
             </a>
-            <a class="page-coaches__item" href="./gladysheva.html">
+            <a class="page-coaches__item aviation" href="./gladysheva.html">
               <div class="page-coaches__item-wrapper">
                 <img src="./images/coaches/Gladysheva.webp" alt="" class="page-coaches__item-img">
                 <h3 class="page-coaches__item-name">
@@ -127,7 +139,7 @@
                 </h3>
               </div>
             </a>
-            <a class="page-coaches__item" href="./nemkina.html">
+            <a class="page-coaches__item tikhvin" href="./nemkina.html">
               <div class="page-coaches__item-wrapper">
                 <img src="./images/coaches/nemkina.webp" alt="" class="page-coaches__item-img">
                 <h3 class="page-coaches__item-name">
@@ -135,7 +147,7 @@
                 </h3>
               </div>
             </a>
-            <a class="page-coaches__item" href="./kudinov.html">
+            <a class="page-coaches__item tikhvin" href="./kudinov.html">
               <div class="page-coaches__item-wrapper">
                 <img src="./images/coaches/Kudinov.webp" alt="" class="page-coaches__item-img">
                 <h3 class="page-coaches__item-name">
@@ -143,7 +155,7 @@
                 </h3>
               </div>
             </a>
-            <a class="page-coaches__item" href="./rassohina.html">
+            <a class="page-coaches__item aviation" href="./rassohina.html">
               <div class="page-coaches__item-wrapper">
                 <img src="./images/coaches/Rassokhina.webp" alt="" class="page-coaches__item-img">
                 <h3 class="page-coaches__item-name">
@@ -151,7 +163,7 @@
                 </h3>
               </div>
             </a>
-            <a class="page-coaches__item" href="./datskii.html">
+            <a class="page-coaches__item tikhvin" href="./datskii.html">
               <div class="page-coaches__item-wrapper">
                 <img src="./images/coaches/Datskii.webp" alt="" class="page-coaches__item-img">
                 <h3 class="page-coaches__item-name">
@@ -268,7 +280,7 @@
             </h4>
             <ul class="footer__list">
               <li class="footer__list-item">
-                <a href="./school.html" class="footer__list-link">  О школе </a>
+                <a href="./school.html" class="footer__list-link"> О школе </a>
               </li>
               <li class="footer__list-item">
                 <a href="./advantages.html" class="footer__list-link"> Наши преимущества </a>
@@ -297,7 +309,8 @@
     </footer>
   </div>
 
-  <script src="js/main.min.js"></script>
+  <!-- <script src="js/main.min.js"></script> -->
+  <script src="js/filter.js"></script>
 </body>
 
 </html>
